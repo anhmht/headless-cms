@@ -6,6 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "serve": "nuxt dev --spa",
     "generate": "nuxt generate"
   },
   "dependencies": {
@@ -18,6 +19,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.0.1",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0"
   }
