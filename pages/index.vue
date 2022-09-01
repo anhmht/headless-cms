@@ -1,16 +1,21 @@
 <template>
-  <Tutorial />
+  <div>
+    <h1>aaaa</h1>
+    <el-button type="primary">ets</el-button>
+    <li v-for="post of posts" :key="post.slug">
+      <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
+    </li>
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage',
-  head() {
+<script>
+export default {
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+    console.log(posts)
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
-})
+      posts
+    }
+  }
+}
 </script>

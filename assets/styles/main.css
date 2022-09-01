@@ -1,0 +1,105 @@
+@import './variables.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+  color: var(--color-primary-text);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+h4 {
+  font-size: 2.4rem;
+}
+
+a {
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.el-form-item__label {
+  line-height: unset;
+}
+.el-form--label-top .el-form-item__label {
+  padding: 0 0 4px;
+}
+.el-form-item.is-required:not(.is-no-asterisk)
+  .el-form-item__label-wrap
+  > .el-form-item__label:before,
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before {
+  content: '';
+}
+
+.el-loading-spinner {
+  left: 50%;
+}
+
+.el-slider__button-wrapper {
+  z-index: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all 0.5s;
+}
+.slide-right-enter {
+  transform: translate(70%, 0);
+  opacity: 1;
+}
+.slide-right-leave-to {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+
+.slide-left-enter {
+  transform: translate(-100%, 0);
+  opacity: 1;
+}
+.slide-left-leave-to {
+  transform: translate(70%, 0);
+  opacity: 0;
+}

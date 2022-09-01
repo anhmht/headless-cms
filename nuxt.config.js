@@ -1,6 +1,20 @@
+import fs from 'fs'
+import path from 'path'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  /*
+   ** SSL on local development (checkout README.md for instructions)
+   */
+  // server: {
+  //   port: process.env.NUXT_PORT,
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, '.ssl/localhost.key')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, '.ssl/localhost.crt'))
+  //   }
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -18,7 +32,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: [
+    '~/assets/styles/main.css',
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/styles/index.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/element-ui'],
@@ -37,6 +55,34 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/]
+    transpile: [/^element-ui/, 'dom7', 'ssr-window'],
+    // Customize PostCSS Loader plugins
+    // https://nuxtjs.org/api/configuration-build/#postcss
+    postcss: {
+      // Nuxt.js has applied PostCSS Preset Env.
+      // By default it enables Stage 2 features and Autoprefixer,
+      // you can use `build.postcss.preset` to configure it.
+      // https://preset-env.cssdb.org/features#stage-2
+      preset: {
+        // Specifies sources where variables like Custom Media, Custom Properties, etc.
+        // https://github.com/csstools/postcss-preset-env#importfrom
+        importFrom: ['assets/styles/variables.css'],
+
+        // Enables or disables specific polyfills
+        // https://github.com/csstools/postcss-preset-env#features
+        features: {
+          'nesting-rules': true,
+          'custom-media-queries': true,
+          stage: 1
+        }
+      },
+      plugins: {
+        'postcss-mixins': {},
+        'postcss-import': {},
+        'tailwindcss/nesting': {},
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
+        autoprefixer: {}
+      }
+    }
   }
 }
