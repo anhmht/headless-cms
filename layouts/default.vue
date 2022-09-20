@@ -1,19 +1,18 @@
 <template>
   <div :class="$style.root">
-    <el-container>
-      <el-header>Header</el-header>
-      <el-container>
-        <el-main>
-          <nuxt-child />
-        </el-main>
-      </el-container>
-      <el-footer>Header</el-footer>
-    </el-container>
+    <Header />
+    <main>
+      <nuxt-child />
+    </main>
   </div>
 </template>
 
 <script>
-export default {}
+import Vue from 'vue'
+import Header from '~/components/layout/header/Header.vue'
+export default Vue.extend({
+  components: { Header }
+})
 </script>
 <style lang="postcss" module>
 .root {

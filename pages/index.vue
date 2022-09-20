@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>aaaa</h1>
     <el-button type="primary">ets</el-button>
     <li v-for="post of posts" :key="post.slug">
@@ -11,10 +11,12 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
+    const posts = await $content('post').fetch()
+    const categories = await $content('category').fetch()
     console.log(posts)
     return {
-      posts
+      posts,
+      categories
     }
   }
 }

@@ -7,27 +7,39 @@ publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'post'
+    label: 'Post'
+    folder: 'content/post'
     create: true
     slug: '{{slug}}'
     sort: 'date:desc'
     fields:
-      - { label: 'Type', name: 'type', widget: 'string', required: false }
+      - { label: 'ID', name: 'id', widget: 'uuid' }
       - {
-          label: 'Language',
-          name: 'language',
-          widget: 'string',
-          required: false
+          label: 'Category',
+          name: 'category',
+          widget: 'relation',
+          collection: 'category',
+          value_field: 'id',
+          search_fields: ['title', 'id'],
+          display_fields: ['title'],
+          required: true
         }
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Title-VI', name: 'title', widget: 'string', required: true }
+      - { label: 'Title-EN', name: 'titleEN', widget: 'string', required: true }
       - {
-          label: Summary 164-220,
+          label: Summary-VI 10-220,
           name: summary,
           widget: text,
           required: true,
-          pattern: ['.{164,220}', 'Must be within 164 and 220 characters']
+          pattern: ['.{10,200}', 'Must be within 10 and 220 characters']
+        }
+      - {
+          label: Summary-EN 10-220,
+          name: summaryEN,
+          widget: text,
+          required: true,
+          pattern: ['.{10,200}', 'Must be within 10 and 220 characters']
         }
       - { label: 'Publish Date', name: 'date', widget: 'date', required: true }
       - {
@@ -36,17 +48,21 @@ collections:
           widget: 'date',
           required: false
         }
-      - { label: 'Author', name: 'author', widget: 'string', required: true }
-      - {
-          label: 'Author Link',
-          name: 'authorlink',
-          widget: 'string',
-          required: false
-        }
       - {
           label: 'Featured Image',
           name: 'thumbnail',
           widget: 'image',
           required: true
         }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+      - { label: 'Body-VI', name: 'body', widget: 'markdown', required: true }
+      - { label: 'Body-EN', name: 'bodyEN', widget: 'markdown', required: true }
+  - name: 'category'
+    label: 'Category'
+    folder: 'content/category'
+    create: true
+    slug: '{{slug}}'
+    sort: 'date:desc'
+    fields:
+      - { label: 'ID', name: 'id', widget: 'uuid' }
+      - { label: 'Title-EN', name: 'titleEN', widget: 'string', required: true }
+      - { label: 'Title-VI', name: 'title', widget: 'string', required: true }
