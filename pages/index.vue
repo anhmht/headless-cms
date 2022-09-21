@@ -1,23 +1,24 @@
 <template>
   <div class="container">
-    <h1>aaaa</h1>
-    <el-button type="primary">ets</el-button>
-    <li v-for="post of posts" :key="post.slug">
-      <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
-    </li>
+    <Banner />
+    <el-row :gutter="24" :class="$style.content">
+      <el-col :lg="18"><NewPosts :class="$style.posts" /></el-col>
+      <el-col :lg="6"><TrendingPost /></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
+import Banner from '~/components/home/Banner.vue'
+import NewPosts from '~/components/home/NewPosts.vue'
+import TrendingPost from '~/components/home/TrendingPost.vue'
 export default {
-  async asyncData({ $content }) {
-    const posts = await $content('post').fetch()
-    const categories = await $content('category').fetch()
-    console.log(posts)
-    return {
-      posts,
-      categories
-    }
-  }
+  components: { Banner, NewPosts, TrendingPost },
+  middleware: ['categories']
 }
 </script>
+<style lang="postcss" module>
+.content {
+  margin-top: var(--space-4x);
+}
+</style>

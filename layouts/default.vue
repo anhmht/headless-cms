@@ -16,6 +16,9 @@ export default Vue.extend({
 </script>
 <style lang="postcss" module>
 .root {
+  main {
+    margin-top: var(--space-2x);
+  }
   .hidden {
     display: none;
   }

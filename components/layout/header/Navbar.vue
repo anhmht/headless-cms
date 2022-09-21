@@ -12,27 +12,23 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
+import { RootState } from '~/store/state'
 export default Vue.extend({
-  data() {
-    return {
-      categories: []
+  computed: {
+    categories() {
+      return (this.$store.state as RootState).categories
     }
-  },
-  async fetch() {
-    this.categories = await this.$content('category').fetch()
   }
 })
 </script>
 <style lang="postcss" module>
 .root {
   display: flex;
+  justify-content: space-evenly;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: var(--space) 0;
-  .item + .item {
-    margin-left: var(--space);
-  }
 }
 </style>

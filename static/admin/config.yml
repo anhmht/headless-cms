@@ -25,6 +25,12 @@ collections:
           display_fields: ['title'],
           required: true
         }
+      - {
+          label: 'Is Banner',
+          name: 'isBanner',
+          widget: 'boolean',
+          default: false
+        }
       - { label: 'Title-VI', name: 'title', widget: 'string', required: true }
       - { label: 'Title-EN', name: 'titleEN', widget: 'string', required: true }
       - {
