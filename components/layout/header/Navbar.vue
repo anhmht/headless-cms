@@ -30,5 +30,10 @@ export default Vue.extend({
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: var(--space) 0;
+  .item {
+    a {
+      color: #000;
+    }
+  }
 }
 </style>

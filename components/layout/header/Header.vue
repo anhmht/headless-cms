@@ -14,7 +14,7 @@
         </div>
         <div :class="$style.logo">
           <nuxt-link to="/">
-            <h1>HIEN LAWYER</h1>
+            <h1>LAW 4 YOU</h1>
           </nuxt-link>
         </div>
         <div :class="$style.search">

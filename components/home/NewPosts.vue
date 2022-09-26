@@ -2,10 +2,18 @@
   <div :class="$style.root">
     <div :class="$style.item" v-for="post in posts" :key="post.id">
       <el-row :gutter="16">
-        <el-col :span="12"><img :src="post.thumbnail" alt="aa" /></el-col>
-        <el-col :span="12">
+        <el-col :sm="12">
+          <nuxt-link :to="post.path">
+            <img :src="post.thumbnail" alt="aa" />
+          </nuxt-link>
+        </el-col>
+        <el-col :sm="12">
           <div :class="$style.content">
-            <h1>{{ post.title }}</h1>
+            <DisplayCategory :id="post.category" />
+            <nuxt-link :to="post.path">
+              <h1>{{ post.title }}</h1>
+            </nuxt-link>
+
             <p>{{ summary(post.summary) }}</p>
             <nuxt-link :to="post.path">Xem thêm</nuxt-link>
           </div>
@@ -17,21 +25,30 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { RootState } from '~/store/state'
+import DisplayCategory from '~/components/common/DisplayCategory.vue'
 export default Vue.extend({
+  components: {
+    DisplayCategory
+  },
+  props: {
+    skip: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
       posts: []
     }
   },
   async fetch() {
-    this.posts = await (this as any).$content('post').limit(3).fetch()
+    this.posts = await (this as any)
+      .$content('post')
+      .skip(this.skip)
+      .limit(3)
+      .fetch()
   },
-  computed: {
-    categories() {
-      return (this.$store.state as RootState).categories
-    }
-  },
+
   methods: {
     summary(summary: string): string {
       if (summary.length <= 250) {
@@ -46,6 +63,9 @@ export default Vue.extend({
 .root {
   .item {
     padding-bottom: var(--space-2x);
+    h1 {
+      margin-top: var(--space);
+    }
     img {
       height: 280px;
       width: 100%;
