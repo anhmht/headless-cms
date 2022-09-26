@@ -6,7 +6,10 @@
         :key="item.id"
         :class="$style.item"
       >
-        <img :src="item.thumbnail" alt="aa" />
+        <nuxt-link :to="item.path">
+          <img :src="item.thumbnail" alt="aa" />
+        </nuxt-link>
+
         <nuxt-link :class="$style.link" :to="item.path">{{
           item.title
         }}</nuxt-link>

@@ -35,7 +35,8 @@ export default {
   css: [
     '~/assets/styles/main.css',
     'element-ui/lib/theme-chalk/index.css',
-    '~/assets/styles/index.css'
+    '~/assets/styles/index.css',
+    '@fortawesome/fontawesome-free/css/all.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

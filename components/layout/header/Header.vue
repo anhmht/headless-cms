@@ -52,6 +52,9 @@ export default Vue.extend({
   .wrapper {
     display: flex;
     padding: var(--space) 0;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   .logo {
     flex: 1;
