@@ -20,8 +20,7 @@ import Banner from '~/components/home/Banner.vue'
 import NewPosts from '~/components/home/NewPosts.vue'
 import TrendingPost from '~/components/home/TrendingPost.vue'
 export default {
-  components: { Banner, NewPosts, TrendingPost },
-  middleware: ['categories']
+  components: { Banner, NewPosts, TrendingPost }
 }
 </script>
 <style lang="postcss" module>

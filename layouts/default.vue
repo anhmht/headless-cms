@@ -25,6 +25,7 @@ import Header from '~/components/layout/header/Header.vue'
 import NavSideBar from '~/components/layout/header/NavSideBar.vue'
 export default Vue.extend({
   components: { Header, Footer, NavSideBar },
+  middleware: ['categories'],
   data() {
     return {
       visible: false
@@ -50,8 +51,6 @@ export default Vue.extend({
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.15);
-    -webkit-animation: fade 0.5s;
-    animation: fade 0.5s;
     z-index: 1;
   }
   main {

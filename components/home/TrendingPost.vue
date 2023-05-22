@@ -38,7 +38,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    this.posts = await this.$content('post').limit(this.limit).fetch()
+    this.posts = await this.$content('post', 'vn').limit(this.limit).fetch()
   }
 })
 </script>

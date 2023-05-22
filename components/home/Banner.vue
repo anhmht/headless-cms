@@ -27,7 +27,9 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    this.posts = await this.$content('post').where({ isBanner: true }).fetch()
+    this.posts = await this.$content('post', 'vn')
+      .where({ isBanner: true })
+      .fetch()
   }
 })
 </script>

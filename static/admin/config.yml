@@ -6,10 +6,13 @@ local_backend: true # run npx netlify-cms-proxy-server for local testing
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 collections:
   - name: 'post'
     label: 'Post'
-    folder: 'content/post'
+    folder: 'content/post/vn'
     create: true
     slug: '{{slug}}'
     sort: 'date:desc'
@@ -31,18 +34,10 @@ collections:
           widget: 'boolean',
           default: false
         }
-      - { label: 'Title-VI', name: 'title', widget: 'string', required: true }
-      - { label: 'Title-EN', name: 'titleEN', widget: 'string', required: true }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - {
-          label: Summary-VI 10-220,
+          label: Summary 10-220,
           name: summary,
-          widget: text,
-          required: true,
-          pattern: ['.{10,200}', 'Must be within 10 and 220 characters']
-        }
-      - {
-          label: Summary-EN 10-220,
-          name: summaryEN,
           widget: text,
           required: true,
           pattern: ['.{10,200}', 'Must be within 10 and 220 characters']
@@ -60,8 +55,34 @@ collections:
           widget: 'image',
           required: true
         }
-      - { label: 'Body-VI', name: 'body', widget: 'markdown', required: true }
-      - { label: 'Body-EN', name: 'bodyEN', widget: 'markdown', required: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+  - name: 'postEN'
+    label: 'postEN'
+    folder: 'content/post/en'
+    create: true
+    slug: '{{slug}}'
+    sort: 'date:desc'
+    fields:
+      - { label: 'ID', name: 'id', widget: 'uuid' }
+      - {
+          label: 'PostVN',
+          name: 'postVN',
+          widget: 'relation',
+          collection: 'post',
+          value_field: 'id',
+          search_fields: ['title', 'id'],
+          display_fields: ['title'],
+          required: true
+        }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: Summary 10-220,
+          name: summary,
+          widget: text,
+          required: true,
+          pattern: ['.{10,200}', 'Must be within 10 and 220 characters']
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
   - name: 'category'
     label: 'Category'
     folder: 'content/category'

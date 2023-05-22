@@ -43,10 +43,11 @@ export default Vue.extend({
   },
   async fetch() {
     this.posts = await (this as any)
-      .$content('post')
+      .$content('post', 'vn')
       .skip(this.skip)
       .limit(3)
       .fetch()
+    console.log(this.posts)
   },
 
   methods: {
