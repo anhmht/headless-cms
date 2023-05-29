@@ -32,12 +32,7 @@ export default Vue.extend({
       .fetch()
   },
   watch: {
-    '$route.params.slug': {
-      handler() {
-        this.$fetch()
-      },
-      immediate: true
-    }
+    '$route.params.slug': '$fetch'
   }
 })
 </script>

@@ -54,6 +54,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content', '@nuxtjs/i18n'],
 
+  content: {
+    liveEdit: false
+  },
+
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: 'vn',

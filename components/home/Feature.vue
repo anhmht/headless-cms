@@ -51,12 +51,7 @@ export default Vue.extend({
     }
   },
   watch: {
-    '$i18n.locale': {
-      handler() {
-        this.$fetch()
-      },
-      immediate: true
-    }
+    '$i18n.locale': '$fetch'
   },
   methods: {
     summary(summary) {
