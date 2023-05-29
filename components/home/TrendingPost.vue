@@ -1,9 +1,12 @@
 <template>
   <div :class="$style.root">
     <div
-      :class="`grid grid-cols-1 gap-x-6 xs:grid-cols-2 sm:grid-cols-4 ${
-        isSideBar ? `lg:grid-cols-1` : `lg:grid-cols-4`
-      } ${isSideBar ? `xl:gap-x-0` : ``}`"
+      :class="[
+        `grid grid-cols-1 gap-x-6 xs:grid-cols-2 sm:grid-cols-4 ${
+          isSideBar ? `lg:grid-cols-1` : `lg:grid-cols-4`
+        } ${isSideBar ? `xl:gap-x-0` : ``}`,
+        $style.posts
+      ]"
     >
       <div
         :class="$style.item"
@@ -68,6 +71,12 @@ export default Vue.extend({
 </script>
 <style lang="postcss" module>
 .root {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+    flex-direction: column;
+  }
   .item {
     display: flex;
     gap: var(--space);
@@ -90,10 +99,7 @@ export default Vue.extend({
     width: 100px;
     min-width: 100px;
   }
-  .item + .item {
-    margin-top: var(--space);
-  }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     .item {
       img {
         margin: auto;
