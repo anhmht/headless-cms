@@ -15,8 +15,13 @@
       </main>
       <Footer />
     </div>
-
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div id="fb-root"></div>
+    <div
+      id="fb-customer-chat"
+      page_id="100092985737880"
+      attribution="biz_inbox"
+      class="fb-customerchat"
+    ></div>
   </div>
 </template>
 
