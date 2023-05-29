@@ -6,14 +6,15 @@
       } ${isSideBar ? `xl:gap-x-0` : ``}`"
     >
       <div :class="$style.item" v-for="post in posts" :key="post.id">
-        <el-row :gutter="16">
-          <el-col :md="11"> <img :src="post.thumbnail" alt="" /></el-col>
-          <el-col :md="13">
-            <div :class="$style.content">
-              <h4>{{ post.title }}</h4>
-            </div>
-          </el-col>
-        </el-row>
+        <div :class="$style.image">
+          <img :src="post.thumbnail" :alt="post.title" />
+        </div>
+        <div :class="$style.content">
+          <DisplayCategory :id="post.category" />
+          <nuxt-link :to="`post/${post.slug}`">
+            <h4>{{ post.title }}</h4></nuxt-link
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -21,7 +22,9 @@
 
 <script>
 import Vue from 'vue'
+import DisplayCategory from '../common/DisplayCategory.vue'
 export default Vue.extend({
+  components: { DisplayCategory },
   props: {
     isSideBar: {
       type: Boolean,
@@ -45,11 +48,11 @@ export default Vue.extend({
 <style lang="postcss" module>
 .root {
   .item {
-    padding-bottom: var(--space);
-    padding-right: var(--space);
+    display: flex;
+    gap: var(--space);
     img {
       height: 100px;
-      width: 100px;
+      width: 100%;
       object-fit: cover;
       cursor: pointer;
       &:hover {
@@ -58,15 +61,21 @@ export default Vue.extend({
     }
     h4 {
       font-size: 1.2rem;
+      margin-top: var(--space-1o2);
+      color: #000;
     }
+  }
+  .image {
+    width: 100px;
+    min-width: 100px;
+  }
+  .item + .item {
+    margin-top: var(--space);
   }
   @media only screen and (max-width: 992px) {
     .item {
       img {
         margin: auto;
-      }
-      h4 {
-        text-align: center;
       }
     }
   }

@@ -42,7 +42,6 @@ export default Vue.extend({
   .category {
     margin-top: var(--space-2x);
     flex: 1;
-    margin-left: var(--space-1x5);
     display: flex;
     justify-content: space-evenly;
     align-items: center;

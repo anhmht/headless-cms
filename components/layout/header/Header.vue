@@ -19,11 +19,12 @@
         </div>
         <div :class="$style.search">
           <el-input
-            placeholder="Tìm kiếm"
+            :placeholder="$t('search')"
             prefix-icon="el-icon-search"
             v-model="search"
           >
           </el-input>
+          <LanguageSwitcher />
         </div>
       </div>
       <Navbar />
@@ -33,9 +34,10 @@
 
 <script>
 import Vue from 'vue'
+import LanguageSwitcher from '~/components/common/LanguageSwitcher.vue'
 import Navbar from '~/components/layout/header/Navbar.vue'
 export default Vue.extend({
-  components: { Navbar },
+  components: { Navbar, LanguageSwitcher },
   data() {
     return {
       search: ''
@@ -70,9 +72,7 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    > div {
-      width: 200px;
-    }
+    gap: var(--space);
   }
 
   .social {

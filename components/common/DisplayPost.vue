@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.root">
-    <nuxt-link :to="post.path">
+    <nuxt-link :to="`post/${post.slug}`">
       <img :src="post.thumbnail" alt="aa" />
     </nuxt-link>
   </div>

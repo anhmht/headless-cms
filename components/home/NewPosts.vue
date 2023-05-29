@@ -3,19 +3,19 @@
     <div :class="$style.item" v-for="post in posts" :key="post.id">
       <el-row :gutter="16">
         <el-col :sm="12">
-          <nuxt-link :to="post.path">
+          <nuxt-link :to="`post/${post.slug}`">
             <img :src="post.thumbnail" alt="aa" />
           </nuxt-link>
         </el-col>
         <el-col :sm="12">
           <div :class="$style.content">
             <DisplayCategory :id="post.category" />
-            <nuxt-link :to="post.path">
+            <nuxt-link :to="`post/${post.slug}`">
               <h1>{{ post.title }}</h1>
             </nuxt-link>
 
             <p>{{ summary(post.summary) }}</p>
-            <nuxt-link :to="post.path">Xem thêm</nuxt-link>
+            <nuxt-link :to="`post/${post.slug}`">Xem thêm</nuxt-link>
           </div>
         </el-col>
       </el-row>
@@ -47,7 +47,6 @@ export default Vue.extend({
       .skip(this.skip)
       .limit(3)
       .fetch()
-    console.log(this.posts)
   },
 
   methods: {

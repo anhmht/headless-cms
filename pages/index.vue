@@ -4,12 +4,11 @@
     <el-row :gutter="24" :class="$style.content">
       <el-col :lg="18">
         <NewPosts :class="$style.posts" />
-        <TrendingPost :class="$style.categoryPost" />
+        <Feature :class="$style.categoryPost" />
         <NewPosts :class="$style.categoryPost" :skip="3" />
-        <TrendingPost :class="$style.categoryPost" />
       </el-col>
       <el-col :lg="6" :class="$style.sticky"
-        ><TrendingPost is-side-bar
+        ><TrendingPost is-side-bar :limit="5"
       /></el-col>
     </el-row>
   </div>
@@ -19,8 +18,9 @@
 import Banner from '~/components/home/Banner.vue'
 import NewPosts from '~/components/home/NewPosts.vue'
 import TrendingPost from '~/components/home/TrendingPost.vue'
+import Feature from '~/components/home/Feature.vue'
 export default {
-  components: { Banner, NewPosts, TrendingPost }
+  components: { Banner, NewPosts, TrendingPost, Feature }
 }
 </script>
 <style lang="postcss" module>

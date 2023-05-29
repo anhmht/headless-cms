@@ -6,11 +6,11 @@
         :key="item.id"
         :class="$style.item"
       >
-        <nuxt-link :to="item.path">
+        <nuxt-link :to="`post/${item.slug}`">
           <img :src="item.thumbnail" alt="aa" />
         </nuxt-link>
 
-        <nuxt-link :class="$style.link" :to="item.path">{{
+        <nuxt-link :class="$style.link" :to="`post/${item.slug}`">{{
           item.title
         }}</nuxt-link>
       </el-carousel-item>

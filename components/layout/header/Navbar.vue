@@ -57,7 +57,7 @@ export default Vue.extend({
   }
   .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     padding: var(--space) 0;

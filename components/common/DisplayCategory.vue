@@ -29,7 +29,6 @@ export default Vue.extend({
 <style lang="postcss" module>
 .root {
   a {
-    color: #000;
     font-size: 1rem;
   }
 }

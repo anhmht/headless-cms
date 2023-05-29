@@ -40,6 +40,10 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+.container {
+  margin: auto;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.3s;
