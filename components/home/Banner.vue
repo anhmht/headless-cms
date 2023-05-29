@@ -35,7 +35,7 @@ export default Vue.extend({
     this.posts.forEach(async (element) => {
       this.postsLocale.push(
         ...(await this.$content('post', this.$i18n.locale)
-          .where({ postVN: element.id })
+          .where({ slug: element.slug })
           .fetch())
       )
     })

@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.root">
+  <div :class="[$style.root, visible && $style.overflow]">
     <transition name="fade">
       <div
         v-if="visible"
@@ -67,6 +67,9 @@ export default Vue.extend({
     &:hover {
       opacity: 0.7;
     }
+  }
+  &.overflow {
+    overflow: hidden;
   }
 }
 </style>

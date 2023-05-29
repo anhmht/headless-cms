@@ -7,6 +7,7 @@
         :alt="post[$i18n.locale].title"
       />
       <h1>{{ post[$i18n.locale].title }}</h1>
+      <p>{{ post[$i18n.locale].summary }}</p>
       <nuxt-content :document="post[$i18n.locale]" />
     </div>
   </div>
@@ -53,7 +54,7 @@ export default Vue.extend({
   }
 
   img {
-    margin: var(--space) auto;
+    margin: var(--space-2x) auto;
     width: 100%;
   }
 
@@ -61,11 +62,12 @@ export default Vue.extend({
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
-    margin: var(--space) 0;
+    margin: var(--space-3x) 0;
     color: #000;
   }
   h2 {
     font-size: 2rem;
+    margin: var(--space-2x) 0;
   }
   p {
     margin: 4px 0;
