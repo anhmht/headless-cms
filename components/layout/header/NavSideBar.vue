@@ -14,7 +14,7 @@
     </div>
     <div :class="$style.content">
       <div v-for="item in categories" :class="$style.item" :key="item.id">
-        <nuxt-link :to="item.path">{{ item.title }}</nuxt-link>
+        <nuxt-link :to="item.path">{{ $translate('title', item) }}</nuxt-link>
       </div>
     </div>
     <div :class="$style.lang">

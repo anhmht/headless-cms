@@ -1,6 +1,6 @@
 <template>
   <div :class="[$style.root, 'container']">
-    <div v-if="post.vn">
+    <div v-if="!$fetchState.pending">
       <img :src="post.vn.thumbnail" :alt="post[$i18n.locale].title" />
       <h2>{{ post[$i18n.locale].title }}</h2>
       <nuxt-content :document="post[$i18n.locale]" />
@@ -25,7 +25,7 @@ export default Vue.extend({
           this.$route.params.slug
         ).fetch()
         if (post) {
-          this.post[locale.code] = post
+          this.post = { ...this.post, [locale.code]: post }
         }
       })
     } catch (e) {

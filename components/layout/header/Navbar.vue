@@ -15,13 +15,13 @@
     </div>
     <div :class="$style.nav">
       <div :class="$style.item">
-        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/">{{ $t('home') }}</nuxt-link>
       </div>
       <div v-for="item in categories" :class="$style.item" :key="item.id">
-        <nuxt-link :to="item.path">{{ item.title }}</nuxt-link>
+        <nuxt-link :to="item.path">{{ $translate('title', item) }}</nuxt-link>
       </div>
       <div :class="$style.item">
-        <nuxt-link to="/">Liên hệ</nuxt-link>
+        <nuxt-link to="/">{{ $t('contact') }}</nuxt-link>
       </div>
     </div>
   </div>

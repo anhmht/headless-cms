@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div :class="$style.header">
-      <h2>{{ category.title }}</h2>
+      <h2>{{ $translate('title', category) }}</h2>
     </div>
   </div>
 </template>

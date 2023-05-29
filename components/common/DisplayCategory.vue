@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.root">
     <nuxt-link :to="category.path">
-      {{ category.title }}
+      {{ $translate('title', category) }}
     </nuxt-link>
   </div>
 </template>

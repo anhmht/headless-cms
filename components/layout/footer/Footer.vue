@@ -7,7 +7,9 @@
         </div>
         <div :class="$style.category">
           <div v-for="item in categories" :key="item.id" :class="$style.item">
-            <nuxt-link :to="item.path">{{ item.title }}</nuxt-link>
+            <nuxt-link :to="item.path">{{
+              $translate('title', item)
+            }}</nuxt-link>
           </div>
         </div>
         <div :class="$style.copyright">
