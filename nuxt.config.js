@@ -52,10 +52,29 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content', '@nuxtjs/markdownit'],
+  modules: ['@nuxt/content', '@nuxtjs/i18n'],
 
-  markdownit: {
-    runtime: true // Support `$md()`
+  i18n: {
+    strategy: 'no_prefix',
+    defaultLocale: 'vn',
+    locales: [
+      {
+        code: 'en',
+        name: 'EN',
+        iso: 'en-US',
+        file: 'en-US.json'
+      },
+      {
+        code: 'vn',
+        name: 'VN',
+        iso: 'vn-VN',
+        file: 'vn-VN.json'
+      }
+    ],
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'vn'
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
