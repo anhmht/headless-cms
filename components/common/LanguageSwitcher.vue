@@ -20,6 +20,9 @@ export default Vue.extend({
       active: 'vn'
     }
   },
+  mounted() {
+    this.active = (this as any).$i18n.locale
+  },
   computed: {
     availableLocales(): Array<any> {
       return (this as any).$i18n.locales

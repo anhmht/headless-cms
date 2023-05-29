@@ -1,7 +1,11 @@
 <template>
   <div :class="[$style.root, 'container']">
     <div v-if="!$fetchState.pending">
-      <img :src="post.vn.thumbnail" :alt="post[$i18n.locale].title" />
+      <img
+        :class="$style.banner"
+        :src="post.vn.thumbnail"
+        :alt="post[$i18n.locale].title"
+      />
       <h1>{{ post[$i18n.locale].title }}</h1>
       <nuxt-content :document="post[$i18n.locale]" />
     </div>
@@ -42,11 +46,17 @@ export default Vue.extend({
 <style lang="postcss" module>
 .root {
   font-size: 1.5rem;
-  img {
+  .banner {
     width: 100%;
     height: 300px;
     object-fit: cover;
   }
+
+  img {
+    margin: var(--space) auto;
+    width: 100%;
+  }
+
   h1 {
     font-size: 3rem;
     text-align: center;

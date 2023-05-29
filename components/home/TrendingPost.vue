@@ -5,12 +5,16 @@
         isSideBar ? `lg:grid-cols-1` : `lg:grid-cols-4`
       } ${isSideBar ? `xl:gap-x-0` : ``}`"
     >
-      <div :class="$style.item" v-for="post in posts" :key="post.id">
+      <div
+        :class="$style.item"
+        v-for="(post, index) in newPosts"
+        :key="post.id"
+      >
         <div :class="$style.image">
-          <img :src="post.thumbnail" :alt="post.title" />
+          <img :src="posts[index].thumbnail" :alt="post.title" />
         </div>
         <div :class="$style.content">
-          <DisplayCategory :id="post.category" />
+          <DisplayCategory :id="posts[index].category" />
           <nuxt-link :to="`post/${post.slug}`">
             <h4>{{ post.title }}</h4></nuxt-link
           >
@@ -37,11 +41,33 @@ export default Vue.extend({
   },
   data() {
     return {
-      posts: []
+      posts: [],
+      postsLocale: []
     }
   },
   async fetch() {
     this.posts = await this.$content('post', 'vn').limit(this.limit).fetch()
+    this.postsLocale = []
+    this.posts.forEach(async (element) => {
+      this.postsLocale.push(
+        ...(await this.$content('post', this.$i18n.locale)
+          .where({ postVN: element.id })
+          .fetch())
+      )
+    })
+  },
+  computed: {
+    newPosts() {
+      return this.$i18n.locale === 'vn' ? this.posts : this.postsLocale
+    }
+  },
+  watch: {
+    '$i18n.locale': {
+      handler() {
+        this.$fetch()
+      },
+      immediate: true
+    }
   }
 })
 </script>

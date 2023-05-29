@@ -1,6 +1,6 @@
 ---
 id: ee7de31f-7178-48c5-a27e-8da7d680f109
-postVN: "Dịch vụ thành lập công ty giá rẻ trọn gói "
+postVN: a397287d-0481-4c02-8b53-f2bb0390546e
 title: Cheap company establishment service package
 summary: More than 10 years of experience with a team of experienced
   professionals, Nam Viet Luat has affirmed its role and position as one of the
@@ -11,21 +11,22 @@ summary: More than 10 years of experience with a team of experienced
   early stages of starting a business to become successful entrepreneurs. Below
   are the costs of business establishment services when opening a company.
 ---
+
 ## Total cost of low cost company establishment service package: 1,400,000 VND in which :
 
 1. Service fee for setting up a cheap business in Nam Viet Law - Only 400,000 VND including:
 
-* Consulting fee for choosing the right type of business (One-member LLC, two-member limited liability company, Joint-stock company, partnership, private enterprise).
-* Consulting fee on naming the company or in accordance with regulations, looking up the company name to avoid duplication.
-* Consulting fee to choose the right business line.
-* The charter capital registration consulting fee is in line with reality.
-* The latest legal representative selection consulting fee.
+- Consulting fee for choosing the right type of business (One-member LLC, two-member limited liability company, Joint-stock company, partnership, private enterprise).
+- Consulting fee on naming the company or in accordance with regulations, looking up the company name to avoid duplication.
+- Consulting fee to choose the right business line.
+- The charter capital registration consulting fee is in line with reality.
+- The latest legal representative selection consulting fee.
 
 2. Company establishment fee to be paid at the state – Total VND 1,000,000 including:
 
-* 450,000 VND fee for engraving the company seal and publishing the seal sample on the national business registration portal.
-* 100,000 VND fee for announcing the establishment of an enterprise on the national business registration portal.
-* 450,000 VND authorized representative fee on behalf of customers to submit documents and receive the result as a certificate of business registration at a state agency
+- 450,000 VND fee for engraving the company seal and publishing the seal sample on the national business registration portal.
+- 100,000 VND fee for announcing the establishment of an enterprise on the national business registration portal.
+- 450,000 VND authorized representative fee on behalf of customers to submit documents and receive the result as a certificate of business registration at a state agency
 
 **(Call 24/7): [0778000555](tel:0778000555) - [0909608102](tel:0909608102)   -  [078222229](tel:0782222229)**
 
@@ -35,64 +36,64 @@ summary: More than 10 years of experience with a team of experienced
 
 ## What do customers need to prepare when setting up a business?
 
-* Prepare passports or ID cards or notarized copy of citizen identification not older than 3 months of all capital contributors. If you do not have time to make a notarized copy, provide the original for Nam Viet Luat to do for you.
-* Preparing to name a company (Choose a company name suitable for your business. Nam Viet Luat will look up the company name, consult the company name to determine if the name is valid)
-* Prepare company address;
-* How much is the registered capital to establish the company?
-* Choose your intended business. (For example: Furniture, design, Construction, transportation, restaurant, hotel, wholesale, retail... Nam Viet Law will look up the economic sector code system according to the level 4 code and apply it to the profile of the city. establish a company in accordance with regulations).
-* Selection of legal representatives, selection of company directors.
-* All the things that prepare documents, submit documents, receive results, deliver results, Nam Viet Luat will do it all on your behalf.
+- Prepare passports or ID cards or notarized copy of citizen identification not older than 3 months of all capital contributors. If you do not have time to make a notarized copy, provide the original for Nam Viet Luat to do for you.
+- Preparing to name a company (Choose a company name suitable for your business. Nam Viet Luat will look up the company name, consult the company name to determine if the name is valid)
+- Prepare company address;
+- How much is the registered capital to establish the company?
+- Choose your intended business. (For example: Furniture, design, Construction, transportation, restaurant, hotel, wholesale, retail... Nam Viet Law will look up the economic sector code system according to the level 4 code and apply it to the profile of the city. establish a company in accordance with regulations).
+- Selection of legal representatives, selection of company directors.
+- All the things that prepare documents, submit documents, receive results, deliver results, Nam Viet Luat will do it all on your behalf.
 
 ## Time to complete the service of setting up a cheap company
 
 \* Total time to establish a business takes 04 days . In there:
 
-* 01 day for Nam Viet Law to compile a dossier, submit it to the client to sign, and send a staff member to submit the application for company establishment at the Department of Planning and Investment.
-* 03 days for the Department of Planning and Investment to check the profile of the enterprise and issue the certificate of business registration
-* Especially, Nam Viet Luat provides a package of " *super speed business establishment service* " to receive a business license *from 1-3 working days* depending on the needs of customers.
+- 01 day for Nam Viet Law to compile a dossier, submit it to the client to sign, and send a staff member to submit the application for company establishment at the Department of Planning and Investment.
+- 03 days for the Department of Planning and Investment to check the profile of the enterprise and issue the certificate of business registration
+- Especially, Nam Viet Luat provides a package of " *super speed business establishment service* " to receive a business license *from 1-3 working days* depending on the needs of customers.
 
 ## The results of the service of setting up a cheap business
 
-* Business registration certificate.
-* Company round seal + Publish seal sample on national business registration portal.
+- Business registration certificate.
+- Company round seal + Publish seal sample on national business registration portal.
 
 ## Carrying out tax procedures after establishing a business
 
 After being granted a business registration certificate, many newly established businesses do not know, so they will be *penalized* heavily for failing to do the following mandatory things:
 
-* Prepare and submit the initial tax declaration dossiers, procedures for applying the tax method to the tax authorities:
-* Open a bank account but forgot to notify the bank account number.
-* Buy a digital signature device for tax declaration.
-* Compulsory registration for electronic tax payment (all businesses must declare their tax electronically online).
-* Place the mandatory company Mica signboard at the company's headquarters.
-* Set title tag.
-* If you cannot do the above tasks yourself, you should ask Nam Viet Luat to do it for you to avoid losing a lot of money to troubleshoot later.
+- Prepare and submit the initial tax declaration dossiers, procedures for applying the tax method to the tax authorities:
+- Open a bank account but forgot to notify the bank account number.
+- Buy a digital signature device for tax declaration.
+- Compulsory registration for electronic tax payment (all businesses must declare their tax electronically online).
+- Place the mandatory company Mica signboard at the company's headquarters.
+- Set title tag.
+- If you cannot do the above tasks yourself, you should ask Nam Viet Luat to do it for you to avoid losing a lot of money to troubleshoot later.
 
 ## What does the low-cost company incorporation service in Nam Viet Law include?
 
 The establishment of a company needs to prepare many complicated documents, procedures and related documents. However, you can register for a low-cost company incorporation service in Nam Viet Law to avoid wasting time learning about cumbersome procedures. When you sign up for Nam Viet Law's package company formation service, you will get:
 
-* Detailed advice on information to be prepared related to the company such as company name not duplicate, head office address, type of business, legal representative, registered business lines, direction Guide to declare the most suitable charter capital for the enterprise. Because the initial information of the company is very important and there are regulations that need to be followed, if not, a business license will not be guaranteed.
-* Representing clients in drafting company registration documents, ensuring complete and valid documents. Then submit the business registration dossier to the Department of Planning and Investment and then wait for the license to open the company and pay the business. (This process is usually completed in about 1-3 days.)
-* On behalf of Nam Viet Law, publish the contents of business registration on the national electronic portal, engrave the company's seal and publicize the seal sample in accordance with regulations and time.
-* Nam Viet Law representative completes all relevant procedures after [the establishment of the company](https://namvietluat.vn/tu-van-thanh-lap-cong-ty-tron-goi/) , to ensure that the client's company can smoothly go into business in accordance with regulations.
-* Business representatives make company signs.
-* Customer representative registers a bank account and reports the account number to the Department of Planning and Investment.
-* Help businesses buy digital signatures and issue invoices.
-* On behalf of the registered business, complete the initial tax return.
-* Advising on the term and method of contributing capital to the company after its establishment.
-* Consulting to use accounting services to save the cost of hiring accountants initially.
-* Free legal advice on all issues related to the company's operations, consulting related documents throughout the business operation.
+- Detailed advice on information to be prepared related to the company such as company name not duplicate, head office address, type of business, legal representative, registered business lines, direction Guide to declare the most suitable charter capital for the enterprise. Because the initial information of the company is very important and there are regulations that need to be followed, if not, a business license will not be guaranteed.
+- Representing clients in drafting company registration documents, ensuring complete and valid documents. Then submit the business registration dossier to the Department of Planning and Investment and then wait for the license to open the company and pay the business. (This process is usually completed in about 1-3 days.)
+- On behalf of Nam Viet Law, publish the contents of business registration on the national electronic portal, engrave the company's seal and publicize the seal sample in accordance with regulations and time.
+- Nam Viet Law representative completes all relevant procedures after [the establishment of the company](https://namvietluat.vn/tu-van-thanh-lap-cong-ty-tron-goi/) , to ensure that the client's company can smoothly go into business in accordance with regulations.
+- Business representatives make company signs.
+- Customer representative registers a bank account and reports the account number to the Department of Planning and Investment.
+- Help businesses buy digital signatures and issue invoices.
+- On behalf of the registered business, complete the initial tax return.
+- Advising on the term and method of contributing capital to the company after its establishment.
+- Consulting to use accounting services to save the cost of hiring accountants initially.
+- Free legal advice on all issues related to the company's operations, consulting related documents throughout the business operation.
 
 ## The reasons you should use the service of setting up a company in Nam Viet Law
 
-* Lowest cost of business establishment service in the market. Service fee of Nam Viet Law: 400,000 VND .
-* Always on time, only 3-4 days to get the business registration certificate, 1 day later to have the seal.
-* You do not have to travel (only at Nam Viet Luat), Nam Viet Luat staff prepare documents and come to the place to sign the documents, and hand over the license and seal.
-* Consulting support until the end when customers operate stably, with the motto: "put the customer's interests first".
-* Nam Viet Law owns a team of experienced and highly qualified professionals and lawyers with in-depth knowledge of legal issues and procedures for opening a company. Able to advise and offer appropriate solutions to help customers easily register their business. Coming to Nam Viet Law, businesses will receive free advice on all issues related to company establishment in the most dedicated way.
-* Nam Viet Luat provides preferential and appropriate service rates and costs for setting up a company. Ensure a professional working process, quick processing time, and license delivery to businesses. Enterprises will only need to provide relevant documents and authorize Nam Viet Law, the rest we will help customers complete.
-* Nam Viet Luat is always committed to providing the most prestigious and quality company establishment services. Ensure no costs of unknown origin, commit to proceed quickly, shorten the minimum business establishment time for customers.
+- Lowest cost of business establishment service in the market. Service fee of Nam Viet Law: 400,000 VND .
+- Always on time, only 3-4 days to get the business registration certificate, 1 day later to have the seal.
+- You do not have to travel (only at Nam Viet Luat), Nam Viet Luat staff prepare documents and come to the place to sign the documents, and hand over the license and seal.
+- Consulting support until the end when customers operate stably, with the motto: "put the customer's interests first".
+- Nam Viet Law owns a team of experienced and highly qualified professionals and lawyers with in-depth knowledge of legal issues and procedures for opening a company. Able to advise and offer appropriate solutions to help customers easily register their business. Coming to Nam Viet Law, businesses will receive free advice on all issues related to company establishment in the most dedicated way.
+- Nam Viet Luat provides preferential and appropriate service rates and costs for setting up a company. Ensure a professional working process, quick processing time, and license delivery to businesses. Enterprises will only need to provide relevant documents and authorize Nam Viet Law, the rest we will help customers complete.
+- Nam Viet Luat is always committed to providing the most prestigious and quality company establishment services. Ensure no costs of unknown origin, commit to proceed quickly, shorten the minimum business establishment time for customers.
 
 ## Price list of services for setting up a company with cheap package in Nam Viet Law
 
@@ -116,7 +117,7 @@ The establishment of a company needs to prepare many complicated documents, proc
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
 
-*(This price list is valid within 15 days from the date of receipt of quotation)*
+_(This price list is valid within 15 days from the date of receipt of quotation)_
 
 ### 2. Price list for setting up a foreign-invested company
 

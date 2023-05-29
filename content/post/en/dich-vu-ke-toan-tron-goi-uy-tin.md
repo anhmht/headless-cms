@@ -1,6 +1,6 @@
 ---
 id: f15b94b6-175b-4676-b2b2-29415463d0cc
-postVN: Dịch vụ kế toán trọn gói uy tín
+postVN: b72f71ba-2646-4075-8309-77d2ef5adb51
 title: Prestigious package accounting service
 summary: Your business has just been established, there are few arising, you
   want to save costs, so you do not want to hire an accountant. Then the best
@@ -11,6 +11,7 @@ summary: Your business has just been established, there are few arising, you
   efficiency. To understand more about the full accounting service at Nam Viet
   Law, please refer to the information about accounting services below!
 ---
+
 ## **What does the full accounting service include?**
 
 [](https://thanhlapdoanhnghiepvn.vn/bang-gia-dich-vu-ke-toan-10703)Full [tax reporting service](https://thanhlapdoanhnghiepvn.vn/bang-gia-dich-vu-ke-toan-10703) Currently for businesses include the following jobs:
@@ -29,13 +30,13 @@ summary: Your business has just been established, there are few arising, you
 
 \- Submit reports to tax authorities as prescribed.
 
-* Prepare forms of allocation, depreciation... according to regulations
-* Prepare payroll, labor-related forms.
-* Make a ledger of accounts.
-* Make a general diary
-* Finalize vouchers and prepare accounting books.
-* Prepare accounting vouchers: Input, output, receipt and expenditure.
-* Make detailed books of product costing, inventory books, receivables and payables
+- Prepare forms of allocation, depreciation... according to regulations
+- Prepare payroll, labor-related forms.
+- Make a ledger of accounts.
+- Make a general diary
+- Finalize vouchers and prepare accounting books.
+- Prepare accounting vouchers: Input, output, receipt and expenditure.
+- Make detailed books of product costing, inventory books, receivables and payables
 
 > \>>> **Special:** During the bookkeeping process, the company will cooperate with the Enterprise to balance and handle all outstanding issues related to the revenue, cost, profit and loss plan. Ensure the interests of the Enterprise as well as the correct and sufficient implementation of tax obligations to the State.
 

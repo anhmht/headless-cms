@@ -1,11 +1,10 @@
 <template>
   <div :class="$style.root">
-    <div :class="$style.item" v-for="post in posts" :key="post.id">
+    <div :class="$style.item" v-for="(post, index) in features" :key="post.id">
       <nuxt-link :to="`post/${post.slug}`">
-        <img :src="post.thumbnail" alt="aa" />
+        <img :src="posts[index].thumbnail" :alt="post.title" />
         <div :class="$style.content">
-          <DisplayCategory :id="post.category" />
-
+          <DisplayCategory :id="posts[index].category" />
           <h3>{{ post.title }}</h3>
         </div>
       </nuxt-link>
@@ -13,7 +12,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import DisplayCategory from '~/components/common/DisplayCategory.vue'
 export default Vue.extend({
@@ -28,19 +27,39 @@ export default Vue.extend({
   },
   data() {
     return {
-      posts: []
+      posts: [],
+      postsLocale: []
     }
   },
   async fetch() {
-    this.posts = await (this as any)
-      .$content('post', 'vn')
+    this.posts = await this.$content('post', 'vn')
       .skip(this.skip)
       .limit(3)
       .fetch()
+    this.postsLocale = []
+    this.posts.forEach(async (element) => {
+      this.postsLocale.push(
+        ...(await this.$content('post', this.$i18n.locale)
+          .where({ postVN: element.id })
+          .fetch())
+      )
+    })
   },
-
+  computed: {
+    features() {
+      return this.$i18n.locale === 'vn' ? this.posts : this.postsLocale
+    }
+  },
+  watch: {
+    '$i18n.locale': {
+      handler() {
+        this.$fetch()
+      },
+      immediate: true
+    }
+  },
   methods: {
-    summary(summary: string): string {
+    summary(summary) {
       if (summary.length <= 250) {
         return summary
       }

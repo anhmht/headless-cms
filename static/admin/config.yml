@@ -70,7 +70,7 @@ collections:
           name: 'postVN',
           widget: 'relation',
           collection: 'post',
-          value_field: 'title',
+          value_field: 'id',
           search_fields: ['title', 'id'],
           display_fields: ['title'],
           required: true
