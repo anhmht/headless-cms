@@ -1,8 +1,8 @@
 window.fbAsyncInit = function () {
   FB.init({
+    appId: '123544734074823',
     xfbml: true,
-    version: 'v17.0',
-    autoLogAppEvents: true
+    version: 'v17.0'
   })
 }
 ;(function (d, s, id) {
@@ -11,6 +11,6 @@ window.fbAsyncInit = function () {
   if (d.getElementById(id)) return
   js = d.createElement(s)
   js.id = id
-  js.src = 'https://connect.facebook.net/vn_VN/sdk/xfbml.customerchat.js'
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
   fjs.parentNode.insertBefore(js, fjs)
 })(document, 'script', 'facebook-jssdk')
