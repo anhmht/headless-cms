@@ -15,6 +15,8 @@
       </main>
       <Footer />
     </div>
+
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
   </div>
 </template>
 
