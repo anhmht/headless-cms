@@ -26,7 +26,7 @@
         :key="post.id"
       >
         <nuxt-link :to="`/post/${post.slug}`">
-          <img :src="posts[index].thumbnail" :alt="post.title" />
+          <img :src="posts[index + 3].thumbnail" :alt="post.title" />
         </nuxt-link>
         <div>
           <DisplayCategory :id="posts[index].category" />
@@ -147,6 +147,9 @@ export default Vue.extend({
     object-fit: cover;
     margin-bottom: var(--space);
   }
+}
+.posts + .posts {
+  margin-top: var(--space-2x);
 }
 @media only screen and (max-width: 992px) {
   .feature {
