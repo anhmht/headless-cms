@@ -16,12 +16,7 @@
       <Footer />
     </div>
     <div id="fb-root"></div>
-    <div
-      id="fb-customer-chat"
-      page_id="100092985737880"
-      attribution="biz_inbox"
-      class="fb-customerchat"
-    ></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
   </div>
 </template>
 
@@ -42,6 +37,11 @@ export default Vue.extend({
     this.$nuxt.$on('openSidebar', () => {
       this.visible = !this.visible
     })
+  },
+  mounted() {
+    var chatbox = document.getElementById('fb-customer-chat')
+    chatbox.setAttribute('page_id', '125238340568705')
+    chatbox.setAttribute('attribution', 'biz_inbox')
   }
 })
 </script>
