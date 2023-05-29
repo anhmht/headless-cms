@@ -1,6 +1,6 @@
 ---
 id: 0761d4e3-c0ca-4dfc-927a-b4e7f9c91dee
-postVN: 06120bb0-f1ee-48c1-9dc3-1cb266f91454
+postVN: Dịch vụ thành lập công ty tại TPHCM
 title: 'Service of setting up a company in Ho Chi Minh City '
 summary: You are preparing the procedures to establish a company in Ho Chi Minh
   City but do not know where to start to be able to open a company in Ho Chi

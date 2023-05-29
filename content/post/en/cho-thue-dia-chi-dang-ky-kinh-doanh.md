@@ -1,6 +1,6 @@
 ---
 id: eacfa648-3dbc-4a75-b33c-bf7ce25cc940
-postVN: 5e86af7f-5fa9-45f6-87ac-976b2d7bc56a
+postVN: Cho thuê địa chỉ đăng ký kinh doanh
 title: Rent a registered business address
 summary: Super cheap business address rental service for more than 10 years in
   Nam Viet Law has brought thousands of businesses across the country practical

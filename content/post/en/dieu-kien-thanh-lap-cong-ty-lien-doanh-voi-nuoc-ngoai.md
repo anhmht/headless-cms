@@ -1,6 +1,6 @@
 ---
 id: 7307fb01-2d57-4e10-9489-76c6dd52e1f5
-postVN: 535488f4-1b43-4af2-bc24-827d516c59e9
+postVN: Điều kiện thành lập công ty liên doanh với nước ngoài
 title: Conditions for establishing a joint venture company with a foreign country
 summary: In the integrated economy, the form of joint venture companies toa
   cooperate in business is no longer strange to domestic and foreign investors.
