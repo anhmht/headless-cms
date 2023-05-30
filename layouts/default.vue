@@ -16,7 +16,12 @@
       <Footer />
     </div>
     <div id="fb-root"></div>
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div
+      id="fb-customer-chat"
+      class="fb-customerchat"
+      page_id="388082838333792"
+      attribution="biz_inbox"
+    ></div>
   </div>
 </template>
 
@@ -37,12 +42,12 @@ export default Vue.extend({
     this.$nuxt.$on('openSidebar', () => {
       this.visible = !this.visible
     })
-  },
-  mounted() {
-    var chatbox = document.getElementById('fb-customer-chat')
-    chatbox.setAttribute('page_id', '388082838333792')
-    chatbox.setAttribute('attribution', 'biz_inbox')
   }
+  // mounted() {
+  //   var chatbox = document.getElementById('fb-customer-chat')
+  //   chatbox.setAttribute('page_id', '388082838333792')
+  //   chatbox.setAttribute('attribution', 'biz_inbox')
+  // }
 })
 </script>
 <style lang="postcss" module>
