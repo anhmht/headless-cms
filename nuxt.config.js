@@ -29,7 +29,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: '/js/fb-sdk.js', defer: true }]
+    script: [{ src: '/js/fb-sdk.js', async: true }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
