@@ -114,7 +114,7 @@ Công ty **Law4you** chúng tôi sẽ thực hiện các công việc cần thi�
 ## **Liên hệ thay đổi giấy phép kinh doanh giá rẻ tại Law4you thông qua cách sau:**
 
 * Tư vấn online hoặc gọi điện trực tiếp tới số điện thoại dưới chân website của **Law4you** để được hỗ trợ tư vấn.
-* Scan / Chụp hình GPKD + Liệt kê nội dung cần thay đổi gửi qua khung chat**info@namvietluat.vn**
+* Scan / Chụp hình GPKD + Liệt kê nội dung cần thay đổi gửi qua khung chat.
 
 Để tránh ảnh hưởng đến công việc kinh doanh của doanh nghiệp, giúp tiết kiệm thời gian, chi phí cho quý khách. Đội ngũ luật sư, chuyên viên tư vấn, nhân viên của chúng tôi sẽ trực tiếp tư vấn tại văn phòng quý khách. Đồng thời chúng tôi thực hiện mọi công việc từ việc ký kết hợp đồng, giao nhận tài liệu, hồ sơ, giấy phép đăng ký kinh doanh. Chúng tôi đảm bảo thủ tục thay đổi giấy phép kinh doanh sẽ được tiến hành một cách nhanh chóng, thuận lợi với chất lượng dịch vụ tốt nhất.
 
