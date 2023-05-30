@@ -3,9 +3,9 @@ id: a397287d-0481-4c02-8b53-f2bb0390546e
 category: 55c84e31-87c1-462f-8a8c-858ca5dbfe4e
 isBanner: true
 title: "Dịch vụ thành lập công ty giá rẻ trọn gói "
-summary: Hơn 10 năm kinh nghiệm với đội ngũ chuyên viên giàu kinh nghiệm, Nam
-  Việt Luật đã khẳng định được vai trò và vị thế là một trong những đơn vị tư
-  vấn và cung cấp dịch vụ thành lập công ty giá rẻ 1.400.000đ. Dịch vụ thành lập
+summary: Hơn 10 năm kinh nghiệm với đội ngũ chuyên viên giàu kinh nghiệm,
+  Law4you đã khẳng định được vai trò và vị thế là một trong những đơn vị tư vấn
+  và cung cấp dịch vụ thành lập công ty giá rẻ 1.200.000đ. Dịch vụ thành lập
   công ty trọn gói nhằm đáp ứng nhu cầu của khách hàng tại Tp. Hồ Chí Minh cũng
   như các tỉnh thành khác trên cả nước. Hơn ai hết chúng tôi là đơn vị đồng hành
   cùng các Start Up trong giai đoạn đầu khởi nghiệp trở thành những doanh nhân
@@ -15,9 +15,9 @@ date: 2023-05-29T09:20:56.137Z
 update: 2023-05-29T09:20:56.145Z
 thumbnail: /images/uploads/culture-business.webp
 ---
-## Tổng phí dịch vụ thành lập công ty giá rẻ trọn gói: 1.400.000đ trong đó:
+## Tổng phí dịch vụ thành lập công ty giá rẻ trọn gói: 1.200.000đ trong đó:
 
-1. Phí dịch vụ thành lập doanh nghiệp giá rẻ tại Nam Việt Luật – Chỉ 400.000đ gồm:
+1. Phí dịch vụ thành lập doanh nghiệp giá rẻ tại **Law4you** – Chỉ 200.000đ gồm:
 
 * Phí tư vấn lựa chọn loại hình doanh nghiệp phù hợp (Công ty TNHH 1 thành viên, 2 thành viên, Công ty cổ phần, công ty Hợp danh, Doanh nghiệp tư nhân).
 * Phí tư vấn đặt tên công ty hay đúng quy định, tra cứu tên công ty tránh trùng lặp.
@@ -39,21 +39,21 @@ thumbnail: /images/uploads/culture-business.webp
 
 ## Khách hàng cần chuẩn bị gì khi thành lập doanh nghiệp?
 
-* Chuẩn bị hộ chiếu hoặc CMND hoặc căn cước công dân sao y công chứng không quá 3 tháng của tất cả thành viên góp vốn. Nếu không có thời gian sao y công chứng thì cung cấp bản gốc để Nam Việt Luật làm giúp.
-* Chuẩn bị đặt tên công ty (Lựa chọn tên công ty phù hợp với công việc kinh doanh của mình. Nam Việt Luật sẽ tra cứu tên công ty, tư vấn tên công ty để xác định tên có hợp lệ không)
+* Chuẩn bị hộ chiếu hoặc CMND hoặc căn cước công dân sao y công chứng không quá 3 tháng của tất cả thành viên góp vốn. Nếu không có thời gian sao y công chứng thì cung cấp bản gốc để **Law4you** làm giúp.
+* Chuẩn bị đặt tên công ty (Lựa chọn tên công ty phù hợp với công việc kinh doanh của mình. **Law4you** sẽ tra cứu tên công ty, tư vấn tên công ty để xác định tên có hợp lệ không)
 * Chuẩn bị địa chỉ công ty;
 * Đăng ký mức vốn điều lệ thành lập công ty là bao nhiêu?
-* Lựa chọn ngành nghề dự định kinh doanh. (Ví dụ: Nội thất, thiết kế, Xây dựng, vận tải, nhà hàng, khách sạn, bán buôn, bán lẻ… Nam Việt Luật sẽ tra cứu hệ thống mã ngành kinh tế theo mã cấp 4 và áp vào hồ sơ thành lập công ty theo đúng quy định).
+* Lựa chọn ngành nghề dự định kinh doanh. (Ví dụ: Nội thất, thiết kế, Xây dựng, vận tải, nhà hàng, khách sạn, bán buôn, bán lẻ… **Law4you** sẽ tra cứu hệ thống mã ngành kinh tế theo mã cấp 4 và áp vào hồ sơ thành lập công ty theo đúng quy định).
 * Lựa chọn người đại diện theo pháp luật, lựa chọn giám đốc công ty.
-* Tất cả những việc Soạn hồ sơ, nộp hồ sơ, nhận kết quả, giao kết quả, Nam Việt Luật sẽ thay mặt làm hết cho bạn.
+* Tất cả những việc Soạn hồ sơ, nộp hồ sơ, nhận kết quả, giao kết quả, **Law4you** sẽ thay mặt làm hết cho bạn.
 
 ## Thời gian hoàn thành dịch vụ thành lập công ty giá rẻ
 
 \*Tổng thời gian thành lập doanh nghiệp mất 04 ngày. Trong đó:
 
-* 01 ngày để Nam Việt Luật soạn hồ sơ, trình khách hàng ký hồ sơ, cử nhân viên nộp hồ sơ thành lập công ty tại sở Kế Hoạch Đầu Tư.
+* 01 ngày để **Law4you** soạn hồ sơ, trình khách hàng ký hồ sơ, cử nhân viên nộp hồ sơ thành lập công ty tại sở Kế Hoạch Đầu Tư.
 * 03 ngày để sở KH-ĐT kiểm tra hồ sơ của doanh nghiệp và cấp giấy chứng nhận đăng ký doanh nghiệp
-* Đặc biệt Nam Việt Luật cung cấp gói “*dịch vụ thành lập doanh nghiệp siêu tốc*” nhận giấy phép kinh doanh *từ 1-3 ngày làm việc* tùy vào nhu cầu của khách hàng.
+* Đặc biệt **Law4you** cung cấp gói “*dịch vụ thành lập doanh nghiệp siêu tốc*” nhận giấy phép kinh doanh *từ 1-3 ngày làm việc* tùy vào nhu cầu của khách hàng.
 
 ## Kết quả nhận được của dịch vụ thành lập doanh nghiệp giá rẻ
 
@@ -70,16 +70,16 @@ Sau khi được cấp giấy chứng nhận đăng ký doanh nghiệp, rất nh
 * Bắt buộc thủ tục đăng ký nộp thuế điện tử (mọi doanh nghiệp phải kê khai thuế điện tử qua mạng).
 * Đặt bảng hiệu Mica công ty bắt buộc treo tại trụ sở công ty.
 * Đặt dấu chức danh.
-* Nếu các công việc trên bạn không thể tự thực hiện thì nên nhờ Nam Việt Luật thực hiện thay bạn tránh mất nhiều tiền đi gỡ rối sau này.
+* Nếu các công việc trên bạn không thể tự thực hiện thì nên nhờ **Law4you** thực hiện thay bạn tránh mất nhiều tiền đi gỡ rối sau này.
 
-## Dịch vụ thành lập công ty giá rẻ trọn gói tại Nam Việt Luật gồm những gì?
+## Dịch vụ thành lập công ty giá rẻ trọn gói tại **Law4you** gồm những gì?
 
-Việc thành lập công ty cần chuẩn bị nhiều hồ sơ, thủ tục, giấy tờ liên quan khá phức tạp. Tuy nhiên, bạn có thể đăng ký dịch vụ thành lập công ty giá rẻ trọn gói tại Nam Việt Luật để tránh mất thời gian tìm hiểu thủ tục rườm rà. Khi đăng ký dịch vụ thành lập công ty trọn gói của Nam Việt Luật, bạn sẽ được:
+Việc thành lập công ty cần chuẩn bị nhiều hồ sơ, thủ tục, giấy tờ liên quan khá phức tạp. Tuy nhiên, bạn có thể đăng ký dịch vụ thành lập công ty giá rẻ trọn gói tại **Law4you** để tránh mất thời gian tìm hiểu thủ tục rườm rà. Khi đăng ký dịch vụ thành lập công ty trọn gói của **Law4you**, bạn sẽ được:
 
 * Tư vấn chi tiết về các thông tin cần chuẩn bị liên quan đến công ty như tên công ty không trùng lặp, địa chỉ đặt trụ sở chính, loại hình doanh nghiệp, người đại diện pháp luật, ngành nghề đăng ký kinh doanh, hướng dẫn kê khai mức vốn điều lệ phù hợp nhất với doanh nghiệp. Bởi vì thông tin ban đầu của công ty rất quan trọng và có những quy định cần tuần thủ, nếu không đảm bảo sẽ không được cấp giấy phép kinh doanh.
 * Đại diện cho khách hàng soạn thảo hồ sơ đăng ký thành lập công ty, đảm bảo hồ sơ đầy đủ, hợp lệ. Sau đó nộp hồ sơ đăng ký doanh nghiệp lên Sở Kế hoạch và đầu tư rồi chờ lấy giấy phép mở công ty trả cho doanh nghiệp. (Quá trình này thường được hoàn tất trong khoảng 1-3 ngày).
-* Nam Việt Luật thay mặt công bố nội dung đăng ký doanh nghiệp lên cổng thông tin điện tử quốc gia, khắc con dấu công ty và công khai mẫu dấu đúng quy định và thời gian.
-* Nam Việt Luật đại diện hoàn tất mọi thủ tục liên quan sau khi [thành lập công ty](https://namvietluat.vn/tu-van-thanh-lap-cong-ty-tron-goi/), để đảm bảo công ty của khách hàng có thể thuận lợi đi vào hoạt động kinh doanh theo đúng quy định.
+* **Law4you** thay mặt công bố nội dung đăng ký doanh nghiệp lên cổng thông tin điện tử quốc gia, khắc con dấu công ty và công khai mẫu dấu đúng quy định và thời gian.
+* **Law4you** đại diện hoàn tất mọi thủ tục liên quan sau khi [thành lập công ty](https://namvietluat.vn/tu-van-thanh-lap-cong-ty-tron-goi/), để đảm bảo công ty của khách hàng có thể thuận lợi đi vào hoạt động kinh doanh theo đúng quy định.
 * Đại diện doanh nghiệp thực hiện làm bảng hiệu công ty.
 * Đại diện khách hàng đăng ký tài khoản ngân hàng và báo số tài khoản lên Sở Kế hoạch và đầu tư.
 * Giúp doanh nghiệp mua chữ ký số và tiến hành thông báo phát hành hóa đơn.
@@ -88,17 +88,17 @@ Việc thành lập công ty cần chuẩn bị nhiều hồ sơ, thủ tục, g
 * Tư vấn sử dụng dịch vụ kế toán để tiết kiệm chi phí thuê kế toán ban đầu.
 * Tư vấn pháp lý miễn phí mọi vấn đề liên quan đến hoạt động công ty, tư vấn giấy tờ liên quan trong suốt quá trình hoạt động kinh doanh.
 
-## Những lý do bạn nên sử dụng dịch vụ thành lập công ty tại Nam Việt Luật
+## Những lý do bạn nên sử dụng dịch vụ thành lập công ty tại **Law4you**
 
-* Chi phí thực hiện dịch vụ thành lập doanh nghiệp giá rẻ thấp nhất thị trường. Phí dịch vụ của Nam Việt Luật: 400.000 đ.
+* Chi phí thực hiện dịch vụ thành lập doanh nghiệp giá rẻ thấp nhất thị trường. Phí dịch vụ của **Law4you**: 400.000 đ.
 * Luôn đúng hẹn, chỉ 3-4 ngày có giấy chứng nhận đăng ký doanh nghiệp, 1 ngày sau có con dấu.
-* Quý khách không phải đi lại (chỉ có tại Nam Việt Luật), Nhân viên Nam Việt Luật soạn hồ sơ và đến tận nơi để ký hồ sơ, và bàn giao giấy phép, con dấu.
+* Quý khách không phải đi lại (chỉ có tại **Law4you**), Nhân viên **Law4you** soạn hồ sơ và đến tận nơi để ký hồ sơ, và bàn giao giấy phép, con dấu.
 * Tư vấn hỗ trợ đến cùng khi khách hàng hoạt động ổn định, với phương châm: “đặt quyền lợi khách hàng lên cao nhất”.
-* Nam Việt Luật sở hữu đội ngũ chuyên viên, luật sư giàu kinh nghiệm, chuyên môn cao, có kiến thức chuyên sâu về vấn đề pháp lý, thủ tục mở công ty. Có khả năng tư vấn và đưa ra các giải pháp phù hợp để giúp khách hàng thuận lợi đăng ký kinh doanh. Đến với Nam Việt Luật, doanh nghiệp sẽ được tư vấn miễn phí mọi vấn đề liên quan đến thành lập công ty một cách tận tình nhất.
-* Nam Việt Luật cung cấp mức giá, chi phí dịch vụ thành lập công ty trọn gói ưu đãi, phù hợp. Đảm bảo quy trình làm việc chuyên nghiệp, thời gian giải quyết hồ sơ nhanh chóng, giao giấy phép tận nơi cho doanh nghiệp. Doanh nghiệp sẽ chỉ cần cung cấp giấy tờ liên quan và ủy quyền cho Nam Việt Luật, còn lại mọi vấn đề chúng tôi sẽ giúp khách hàng hoàn thành.
-* Nam Việt Luật luôn cam kết mang lại dịch vụ thành lập công ty uy tín, chất lượng nhất. Đảm bảo không phát sinh chi phí không rõ nguồn gốc, cam kết tiến hành nhanh chóng, rút ngắn thời gian thành lập doanh nghiệp tối thiểu cho khách hàng.
+* **Law4you** sở hữu đội ngũ chuyên viên, luật sư giàu kinh nghiệm, chuyên môn cao, có kiến thức chuyên sâu về vấn đề pháp lý, thủ tục mở công ty. Có khả năng tư vấn và đưa ra các giải pháp phù hợp để giúp khách hàng thuận lợi đăng ký kinh doanh. Đến với **Law4you**, doanh nghiệp sẽ được tư vấn miễn phí mọi vấn đề liên quan đến thành lập công ty một cách tận tình nhất.
+* **Law4you** cung cấp mức giá, chi phí dịch vụ thành lập công ty trọn gói ưu đãi, phù hợp. Đảm bảo quy trình làm việc chuyên nghiệp, thời gian giải quyết hồ sơ nhanh chóng, giao giấy phép tận nơi cho doanh nghiệp. Doanh nghiệp sẽ chỉ cần cung cấp giấy tờ liên quan và ủy quyền cho **Law4you**, còn lại mọi vấn đề chúng tôi sẽ giúp khách hàng hoàn thành.
+* **Law4you** luôn cam kết mang lại dịch vụ thành lập công ty uy tín, chất lượng nhất. Đảm bảo không phát sinh chi phí không rõ nguồn gốc, cam kết tiến hành nhanh chóng, rút ngắn thời gian thành lập doanh nghiệp tối thiểu cho khách hàng.
 
-## Bảng giá dịch vụ thành lập công ty giá rẻ trọn gói tại Nam Việt Luật
+## Bảng giá dịch vụ thành lập công ty giá rẻ trọn gói tại **Law4you**
 
 ### 1. Bảng giá thành lập công ty vốn Việt Nam
 
@@ -219,10 +219,6 @@ Việc thành lập công ty cần chuẩn bị nhiều hồ sơ, thủ tục, g
 | **3**    | Chuyển hồ sơ thuế khác quận                                                                                                                                                                  | 800.000                | 7                             |
 | **4**    | Phát hành hóa đơn điện tử                                                                                                                                                                    | 500.000                | 1-3                           |
 
-**(Gọi 24/7): [0778000555](tel:0778000555) - [0909608102](tel:0909608102)  -  [0782222229](tel:0782222229)**
+**(Gọi 24/7): [](tel:0778000555)**
 
-**Gọi (7:45 – 17:15): [02873000555](tel:02873000555)**
-
-**(Email: info@namvietluat.vn)**
-
-Nếu bạn đang tìm một nơi uy tín để sử dụng dịch vụ thành lập công ty trọn gói, uy tín, giá rẻ thì Nam Việt Luật là nơi đáng để bạn trao gửi niềm tin. Nếu bạn còn băn khoăn hoặc có vướng mắc về hồ sơ, [thủ tục thành lập công ty](https://namvietluat.vn/thu-tuc-thanh-lap-cong-ty-tron-goi/) thì đừng ngần ngại hãy liên hệ ngay với số Hotline của Nam Việt Luật để được chuyên viên hỗ trợ tư vấn nhiệt tình giải đáp hết các thắc mắc nhé.
+Nếu bạn đang tìm một nơi uy tín để sử dụng dịch vụ thành lập công ty trọn gói, uy tín, giá rẻ thì **Law4you** là nơi đáng để bạn trao gửi niềm tin. Nếu bạn còn băn khoăn hoặc có vướng mắc về hồ sơ, [thủ tục thành lập công ty](https://namvietluat.vn/thu-tuc-thanh-lap-cong-ty-tron-goi/) thì đừng ngần ngại hãy liên hệ ngay với số Hotline của **Law4you** để được chuyên viên hỗ trợ tư vấn nhiệt tình giải đáp hết các thắc mắc nhé.
