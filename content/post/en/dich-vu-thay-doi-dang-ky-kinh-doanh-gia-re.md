@@ -110,7 +110,7 @@ Our company **Law4you** will perform the necessary work under the authorization 
 ## **Contact to change the cheap business license in Law4you through the following ways:**
 
 * Consult online or call directly to the phone number at the foot of **Law4you**'s website for consulting support.
-* Scan / Take photo of GPKD + List the content to be changed and send via Chat box.**info@namvietluat.vn**
+* Scan / Take photo of GPKD + List the content to be changed and send via Chat box.
 
 To avoid affecting the business of the enterprise, helping to save time and costs for customers. Our team of lawyers, consultants and staff will directly advise at your office. At the same time, we do all the work from signing contracts, delivering documents, records, business registration permits. We ensure that the procedure for changing the business license will be carried out quickly and smoothly with the best service quality.
 
