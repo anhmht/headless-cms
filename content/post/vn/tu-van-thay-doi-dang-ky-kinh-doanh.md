@@ -55,7 +55,7 @@ Tham khảo chi tiết tại bài: *[Thủ tục thay đổi tên công ty](htt
 
 ### Thay đổi cơ cấu vốn góp, cơ cấu thành viên trên đăng ký kinh doanh cần nắm gì?
 
-Nhiều nhà đầu tư, nhiều cổ đông muốn mua bán chuyển nhượng phần vốn góp, cổ phần cho đối tượng khác hoặc mua lại phần vốn góp thì sẽ dẫn đến việc thay đổi cơ cấu phần vốn góp, việc thay đổi này là điều diễn ra thường xuyên trong quá trình hoạt động của doanh nghiệp khi doanh nghiệp muốn mở rộng/thu hẹp quy mô hoạt động hay chỉ đơn giản là thành viên có nhu cầu góp thêm hoặc giảm vốn, tuy nhiên trước khi thay đổi cơ cấu phần vốn góp hoặc thành viên thì doanh nghiệp cũng cần lưu ý đến những vấn đề sở hữu vốn tối thiểu để trở thành người đại diện pháp luật nếu người đó là thành viên góp vốn, hay đơn giản trong những trường hợp muốn tăng thêm thành viên góp vốn thì phải chuyển đổi loại hình doanh nghiệp… còn nhiều vấn đề liên quan nếu như các bạn quan tâm hay thắc mắc đừng ngần ngại liên hệ Nam Việt Luật để được tư vấn chi tiết.
+Nhiều nhà đầu tư, nhiều cổ đông muốn mua bán chuyển nhượng phần vốn góp, cổ phần cho đối tượng khác hoặc mua lại phần vốn góp thì sẽ dẫn đến việc thay đổi cơ cấu phần vốn góp, việc thay đổi này là điều diễn ra thường xuyên trong quá trình hoạt động của doanh nghiệp khi doanh nghiệp muốn mở rộng/thu hẹp quy mô hoạt động hay chỉ đơn giản là thành viên có nhu cầu góp thêm hoặc giảm vốn, tuy nhiên trước khi thay đổi cơ cấu phần vốn góp hoặc thành viên thì doanh nghiệp cũng cần lưu ý đến những vấn đề sở hữu vốn tối thiểu để trở thành người đại diện pháp luật nếu người đó là thành viên góp vốn, hay đơn giản trong những trường hợp muốn tăng thêm thành viên góp vốn thì phải chuyển đổi loại hình doanh nghiệp… còn nhiều vấn đề liên quan nếu như các bạn quan tâm hay thắc mắc đừng ngần ngại liên hệ **Law4you** để được tư vấn chi tiết.
 
 ### Thay đổi thông tin nhân thân của thành viên, giám đốc công ty cần lưu ý gì?
 
@@ -65,7 +65,7 @@ Tham khảo chi tiết tại bài: *[Thay đổi CMND của giám đốc có ph
 
 ### Thay đổi vốn điều lệ trên đăng ký kinh doanh cần biết gì?
 
-Thay đổi đăng ký kinh doanh tăng hơặc giảm vốn điều lệ doanh nghiệp cũng cần nắm rõ để ra quyết định được phù hợp, doanh nghiệp có biết được những loại hình doanh nghiệp nào được tăng/ giảm vốn điều lệ? loại hình doanh nghiệp nào thì không được giảm vốn điều lệ? đó là những điểm được quy định rõ trong luật để ràng buộc trách nhiệm pháp lý của chủ doanh nghiệp đối với doanh nghiệp mình. Việc tăng giảm vốn điều lệ doanh nghiệp cũng cần cân nhắc tương xứng với những ngành nghề kinh doanh hoạt động hiện tại của doanh nghiệp vì còn liên quan đến mức vốn pháp định đối với ngành nghề kinh doanh có điều kiện yêu cầu mức vốn tối thiểu, còn rất nhiều vấn đề liên quan tùy thuộc vào từng điều kiện của doanh nghiệp, nếu còn thắc mắc đừng ngần ngại liên hệ Nam Việt Luật để được tư vấn giải đáp thắc mắc miễn phí.
+Thay đổi đăng ký kinh doanh tăng hơặc giảm vốn điều lệ doanh nghiệp cũng cần nắm rõ để ra quyết định được phù hợp, doanh nghiệp có biết được những loại hình doanh nghiệp nào được tăng/ giảm vốn điều lệ? loại hình doanh nghiệp nào thì không được giảm vốn điều lệ? đó là những điểm được quy định rõ trong luật để ràng buộc trách nhiệm pháp lý của chủ doanh nghiệp đối với doanh nghiệp mình. Việc tăng giảm vốn điều lệ doanh nghiệp cũng cần cân nhắc tương xứng với những ngành nghề kinh doanh hoạt động hiện tại của doanh nghiệp vì còn liên quan đến mức vốn pháp định đối với ngành nghề kinh doanh có điều kiện yêu cầu mức vốn tối thiểu, còn rất nhiều vấn đề liên quan tùy thuộc vào từng điều kiện của doanh nghiệp, nếu còn thắc mắc đừng ngần ngại liên hệ **Law4you** để được tư vấn giải đáp thắc mắc miễn phí.
 
 Tham khảo chi tiết tại bài: [T*hủ tục tăng vốn điều lệ công ty*](https://namvietluat.vn/thu-tuc-tang-von-dieu-le-cong-ty/)
 
@@ -82,7 +82,6 @@ Tham khảo chi tiết tại bài: [T*hủ tục tăng vốn điều lệ công
 1.Giấy chứng nhận đăng ký doanh nghiệp
 
 2. Giấy chứng nhận đăng ký đầu tư (nếu có)
-
 3. Giấy chứng nhận đăng ký thuế (nếu có)
 
 4.Thông báo về nội dung cần thay đổi đăng ký kinh doanh
@@ -93,7 +92,7 @@ Tham khảo chi tiết tại bài: [T*hủ tục tăng vốn điều lệ công
 
 7.Giấy giới thiệu, uỷ quyền cho người thực hiện hồ sơ.
 
-## Dịch vụ thay đổi đăng ký kinh doanh tại Nam Việt Luật
+## Dịch vụ thay đổi đăng ký kinh doanh tại **Law4you**
 
 Tư vấn toàn bộ thông tin ban đầu về ý định thay đổi đăng ký kinh doanh của tổ chức/ doanh nghiệp/ cá nhân.
 
@@ -103,7 +102,7 @@ Thực hiện hoàn thiện hồ sơ thay đổi đăng ký kinh doanh theo nhu 
 
 Nộp hồ sơ, theo dõi tiến trình hồ sơ và nhận kết quả hồ sơ thay đổi đăng ký kinh doah.
 
-## Quy trình thay đổi đăng ký kinh doanh tại Nam Việt Luật
+## Quy trình thay đổi đăng ký kinh doanh tại **Law4you**
 
 Sau khi tiếp nhận yêu cầu thay đổi đăng ký kinh doanh của doanh nghiệp, chúng tôi sẽ:
 
@@ -120,7 +119,7 @@ Sau khi tiếp nhận yêu cầu thay đổi đăng ký kinh doanh của doanh n
 
 – Con dấu doanh nghiệp đã thay đổi theo nội dung đăng ký kinh doanh (nếu có đổi con dấu công ty).
 
-## Dịch vụ hậu mãi khi thực hiện dịch vụ thay đổi đăng ký kinh doanh tại Nam Việt Luật
+## Dịch vụ hậu mãi khi thực hiện dịch vụ thay đổi đăng ký kinh doanh tại **Law4you**
 
 \-Tư vấn quản lý doanh nghiệp, tư vấn các vấn đề liên quan đến nội bộ doanh nghiệp miễn phí.
 
@@ -130,4 +129,4 @@ Sau khi tiếp nhận yêu cầu thay đổi đăng ký kinh doanh của doanh n
 
 – Tư vấn các vấn đề liên quan khác trong doanh nghiệp.
 
-Nếu còn bất cứ thắc mắc hoặc cần tư vấn và hỗ trợ làm thủ tục thay đổi đăng ký kinh doanh, vui lòng liên hệ công ty Nam Việt Luật để được tư vấn giúp giảm thiểu chi phí và tiết kiệm thời gian quý báu của bạn.
+Nếu còn bất cứ thắc mắc hoặc cần tư vấn và hỗ trợ làm thủ tục thay đổi đăng ký kinh doanh, vui lòng liên hệ công ty **Law4you** để được tư vấn giúp giảm thiểu chi phí và tiết kiệm thời gian quý báu của bạn.
