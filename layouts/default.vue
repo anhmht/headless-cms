@@ -40,7 +40,7 @@ export default Vue.extend({
   },
   mounted() {
     var chatbox = document.getElementById('fb-customer-chat')
-    chatbox.setAttribute('page_id', '125238340568705')
+    chatbox.setAttribute('page_id', '388082838333792')
     chatbox.setAttribute('attribution', 'biz_inbox')
   }
 })

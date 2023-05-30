@@ -60,7 +60,7 @@ export default Vue.extend({
     justify-content: space-between;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    padding: var(--space) 0;
+    padding: var(--space-2x) 0;
     @media only screen and (max-width: 1199px) {
       display: none;
     }

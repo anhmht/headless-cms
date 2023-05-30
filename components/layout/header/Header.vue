@@ -51,6 +51,7 @@ export default Vue.extend({
   top: -80px;
   z-index: var(--z-index-sticky-header);
   background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px 4px;
   .wrapper {
     display: flex;
     padding: var(--space) 0;
