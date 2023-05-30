@@ -21,6 +21,7 @@ export default Vue.extend({
     }
   },
   mounted() {
+    ;(this as any).$i18n.setLocale((this as any).$i18n.locale)
     this.active = (this as any).$i18n.locale
   },
   computed: {
