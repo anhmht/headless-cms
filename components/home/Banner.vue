@@ -34,7 +34,10 @@ export default Vue.extend({
     this.postsLocale = []
     this.posts.forEach(async (element) => {
       this.postsLocale.push(
-        ...(await this.$content('post', this.$i18n.locale)
+        ...(await this.$content(
+          'post',
+          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
+        )
           .where({ slug: element.slug })
           .fetch())
       )

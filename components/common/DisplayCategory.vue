@@ -1,8 +1,9 @@
 <template>
   <div :class="$style.root">
-    <nuxt-link :to="category.path">
+    <nuxt-link v-if="link" :to="category.path">
       {{ $translate('title', category) }}
     </nuxt-link>
+    <div v-else>{{ $translate('title', category) }}</div>
   </div>
 </template>
 
@@ -14,6 +15,10 @@ export default Vue.extend({
     id: {
       type: String,
       required: true
+    },
+    link: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
@@ -28,6 +33,7 @@ export default Vue.extend({
 </script>
 <style lang="postcss" module>
 .root {
+  font-size: 1rem;
   a {
     font-size: 1rem;
   }

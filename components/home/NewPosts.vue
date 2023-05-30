@@ -4,7 +4,7 @@
       <el-row :gutter="16">
         <el-col :sm="12">
           <nuxt-link :to="`post/${post.slug}`">
-            <img :src="posts[index].thumbnail" alt="aa" />
+            <img :src="posts[index].thumbnail" :alt="post.title" />
           </nuxt-link>
         </el-col>
         <el-col :sm="12">
@@ -50,7 +50,10 @@ export default Vue.extend({
     this.postsLocale = []
     this.posts.forEach(async (element) => {
       this.postsLocale.push(
-        ...(await this.$content('post', this.$i18n.locale)
+        ...(await this.$content(
+          'post',
+          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
+        )
           .where({ slug: element.slug })
           .fetch())
       )

@@ -4,7 +4,7 @@
       <nuxt-link :to="`post/${post.slug}`">
         <img :src="posts[index].thumbnail" :alt="post.title" />
         <div :class="$style.content">
-          <DisplayCategory :id="posts[index].category" />
+          <DisplayCategory :id="posts[index].category" :link="false" />
           <h3>{{ post.title }}</h3>
         </div>
       </nuxt-link>
@@ -39,7 +39,10 @@ export default Vue.extend({
     this.postsLocale = []
     this.posts.forEach(async (element) => {
       this.postsLocale.push(
-        ...(await this.$content('post', this.$i18n.locale)
+        ...(await this.$content(
+          'post',
+          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
+        )
           .where({ slug: element.slug })
           .fetch())
       )
