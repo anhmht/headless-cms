@@ -1,11 +1,11 @@
 ---
 id: ee7de31f-7178-48c5-a27e-8da7d680f109
-postVN: Dịch vụ thành lập công ty giá rẻ trọn gói
+postVN: "Dịch vụ thành lập công ty giá rẻ trọn gói "
 title: Cheap company establishment service package
 summary: More than 10 years of experience with a team of experienced
   professionals, Law4you has affirmed its role and position as one of the
   consulting and providing services for setting up a company at a cheap price
-  of  1,400,000  VND . Full service company establishment to meet the needs of
+  of  1,200,000  VND . Full service company establishment to meet the needs of
   customers in Ho Chi Minh City. Ho Chi Minh as well as other provinces across
   the country. Above all, we are the company that accompanies Start Ups in the
   early stages of starting a business to become successful entrepreneurs. Below
@@ -27,11 +27,11 @@ summary: More than 10 years of experience with a team of experienced
 * 100,000 VND fee for announcing the establishment of an enterprise on the national business registration portal.
 * 450,000 VND authorized representative fee on behalf of customers to submit documents and receive the result as a certificate of business registration at a state agency
 
-**(Call 24/7): [0778000555](tel:0778000555) - [0909608102](tel:0909608102)   -  [078222229](tel:0782222229)**
+**(Call 24/7): [](tel:0778000555)**
 
-**Call (7:45 – 17:15) : [02873000555](tel:02873000555)**
+**Call (7:45 – 17:15) : [](tel:02873000555)**
 
-**(Email: info@namvietluat.vn)**
+**(Email: info@)**
 
 ## What do customers need to prepare when setting up a business?
 
@@ -208,10 +208,10 @@ Indirect investment, foreign investors receive capital transfe
 | **3**   | Transfer tax records to another county                                                                                                                                                                      | 800,000                | 7                        |
 | **4**   | Issue e-invoices                                                                                                                                                                                            | 500,000                | 1-3                      |
 
-**(Call 24/7): [0778000555](tel:0778000555) - [0909608102](tel:0909608102)   -  [078222229](tel:0782222229)**
+**(Call 24/7): [](tel:0778000555)**
 
-**Call (7:45 – 17:15): [02873000555](tel:02873000555)**
+**Call (7:45 – 17:15): [](tel:02873000555)**
 
-**(Email: info@namvietluat.vn)**
+**(Email:  )**   
 
 If you are looking for a reputable place to use the full service, reputable and cheap company formation service, then **Law4you** is a place worth your trust. If you still have doubts or have questions about the documents and [procedures for setting up a company ](https://namvietluat.vn/thu-tuc-thanh-lap-cong-ty-tron-goi/), do not hesitate to contact the Hotline of **Law4you** to be enthusiastically consulted by a support specialist to answer all your questions. Please.
