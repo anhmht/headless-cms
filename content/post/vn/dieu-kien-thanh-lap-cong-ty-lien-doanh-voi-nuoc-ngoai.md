@@ -8,22 +8,22 @@ summary: Trong nền kinh tế hội nhập, hình thức các công ty liên do
   nước. Tuy nhiên, không phải chủ đầu tư nào cũng đều có những hiểu biết về quy
   định về công ty liên doanh. Nhằm giúp đỡ các nhà đầu tư nắm bắt và am hiểu sâu
   về các quy định pháp luật liên quan để đưa việc kinh doanh vào hoạt động hiệu
-  quả, Nam Việt Luật giới thiệu một số thông tin cơ bản về quy định thành lập
-  công ty liên doanh chi tiết và mới nhất hiện nay.
+  quả, Law4you giới thiệu một số thông tin cơ bản về quy định thành lập công ty
+  liên doanh chi tiết và mới nhất hiện nay.
 date: 2023-05-29T08:57:33.229Z
 update: 2023-05-29T08:57:33.235Z
 thumbnail: /images/uploads/global-investment.jpeg
 ---
-Hiểu được điều này, Nam Việt Luật xin chia sẻ với khách hàng các nội dung chính yếu như sau:
+Hiểu được điều này, **Law4you** xin chia sẻ với khách hàng các nội dung chính yếu như sau:
 
 * Điều kiện thành lập công ty công ty liên doanh;
 * Thủ tục & Hồ sơ đăng ký thành lập công ty công ty liên doanh;
 * Những lưu ý sau khi thực hiện thành lập công ty công ty liên doanh;
-* Dịch vụ thành lập công ty liên doanh tại Nam Việt Luật
+* Dịch vụ thành lập công ty liên doanh tại **Law4you**
 
-Để biết rõ hơn về các nội dung trên, bạn có thể dõi theo phần tư vấn chi tiết cùng Bộ phận pháp lý Nam Việt Luật dưới bài viết sau đây nhé!
+Để biết rõ hơn về các nội dung trên, bạn có thể dõi theo phần tư vấn chi tiết cùng Bộ phận pháp lý **Law4you** dưới bài viết sau đây nhé!
 
-## *Bộ phận pháp lý Nam Việt Luật trả lời:*
+## *Bộ phận pháp lý* **Law4you** *trả lời:*
 
 ## **Cơ sở pháp lý khi thành lập công ty liên doanh.**
 
@@ -75,7 +75,7 @@ Vì chủ thể của công ty liên doanh bao gồm các cá nhân, tổ chức
 
 Sau khi đã đáp ứng tốt các điều kiện thành lập công ty liên doanh đúng với quy định của Luật doanh nghiệp và luật đầu tư, thì tiếp theo, bạn có thể bắt đầu tiến hành thủ tục thành lập công ty liên doanh với nước ngoài theo 02 trường hợp sau:
 
-***Trường hợp 1:** Công ty được thành lập ngay từ đầu đã có sự tham gia góp vốn của nhà đầu tư nước ngoài và nhà đầu tư Việt Nam*
+**\*Trường hợp 1:** Công ty được thành lập ngay từ đầu đã có sự tham gia góp vốn của nhà đầu tư nước ngoài và nhà đầu tư Việt Nam*
 
 Theo khoản 1 Điều 37 Luật đầu tư năm 2020 quy định về các trường hợp phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư như sau:
 
@@ -123,7 +123,7 @@ Theo đó, danh sách hồ sơ tại khoản 1 Điều 33 Luật Đầu tư như
 
 Thủ tục cấp Giấy chứng nhận đăng ký đầu tư đối với nhà đầu tư nước ngoài được thực hiện theo quy định tại Điều 38 Luật Đầu tư 2020 nội dung chi tiết về trình tự thủ tục được hướng dẫn bởi Điều 35, 36 Nghị định 31/2021/NĐ-CP.
 
-*“**Điều 35. Thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư đối với dự án thuộc diện chấp thuận chủ trương đầu tư***
+\*“**Điều 35. Thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư đối với dự án thuộc diện chấp thuận chủ trương đầu tư***
 
 *1. Thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư đối với dự án đầu tư được chấp thuận chủ trương đầu tư đồng thời với chấp thuận nhà đầu tư và thuộc diện cấp Giấy chứng nhận đăng ký đầu tư được thực hiện như sau:*
 
@@ -159,7 +159,7 @@ Thủ tục cấp Giấy chứng nhận đăng ký đầu tư đối với nhà 
 
 Đối với trường hợp, xin cấp Giấy chứng nhận đăng ký đầu tư trực tuyến trên Hệ thống thông tin quốc gia về đầu tư, thì nhà đầu tư thực hiện theo Điều 40 Nghị định 31/2021/NĐ-CP
 
-*“**Điều 40. Trình tự, thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư trực tuyến trên Hệ thống thông tin quốc gia về đầu tư***
+\*“**Điều 40. Trình tự, thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư trực tuyến trên Hệ thống thông tin quốc gia về đầu tư***
 
 *1. Nhà đầu tư thực hiện trình tự, thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư sử dụng chữ ký số như sau:*
 
@@ -228,13 +228,13 @@ Tùy thuộc vào loại hình công ty mà nhà đầu tư muốn thành lập 
 
 \* Lưu ý: Với tài liệu nước ngoài cần được hợp pháp hóa lãnh sự và công chứng bản dịch
 
-***Trường hợp 2:** Công ty Việt Nam thành lập trước sau đó có thêm nhà đầu tư mua phần vốn góp, nhận chuyển nhượng cổ phần từ nhà đầu tư Việt Nam*
+**\*Trường hợp 2:** Công ty Việt Nam thành lập trước sau đó có thêm nhà đầu tư mua phần vốn góp, nhận chuyển nhượng cổ phần từ nhà đầu tư Việt Nam*
 
 Theo quy định tại Điều 24, 25, 26 của Luật đầu tư 2020 hiện nay nhà đầu tư nước ngoài khi đầu tư theo hình thức góp vốn, mua cổ phần đều phải làm thủ tục đăng ký góp vốn, mua cổ phần tại Sở kế hoạch đầu tư nơi công ty dự định góp vốn, mua cổ phần, đặt trụ sở.
 
 **Bước 1:** Nhà đầu tư chuẩn bị hồ sơ đầy đủ thủ tục theo quy định tại khoản 2 Điều 66 Nghị định 31/2021/NĐ-CP bao gồm:
 
-*“**Điều 66. Thủ tục thực hiện hoạt động đầu tư theo hình thức góp vốn, mua cổ phần, mua phần vốn góp đối với nhà đầu tư nước ngoài***
+\*“**Điều 66. Thủ tục thực hiện hoạt động đầu tư theo hình thức góp vốn, mua cổ phần, mua phần vốn góp đối với nhà đầu tư nước ngoài***
 
 *2. Tổ chức kinh tế có nhà đầu tư nước ngoài đầu tư góp vốn, mua cổ phần, mua phần vốn góp thuộc trường hợp quy định tại khoản 2 Điều 26 Luật Đầu tư nộp 01 bộ hồ sơ đăng ký góp vốn, mua cổ phần, mua phần vốn góp cho cơ quan đăng ký đầu tư nơi tổ chức kinh tế đặt trụ sở chính. Hồ sơ gồm:*
 
@@ -254,7 +254,7 @@ Theo quy định tại Điều 24, 25, 26 của Luật đầu tư 2020 hiện na
 
 *4. Sau khi nhà đầu tư nước ngoài được chấp thuận góp vốn, mua cổ phần, mua phần vốn góp theo quy định tại các khoản 3 và 4 Điều này, tổ chức kinh tế có nhà đầu tư nước ngoài góp vốn, mua cổ phần, mua phần vốn góp thực hiện thủ tục thay đổi thành viên, cổ đông tại cơ quan đăng ký kinh doanh theo quy định của pháp luật về doanh nghiệp và pháp luật khác tương ứng với từng loại hình tổ chức kinh tế. Quyền và nghĩa vụ của nhà đầu tư nước ngoài với tư cách là thành viên, cổ đông của tổ chức kinh tế được xác lập khi hoàn tất thủ tục thay đổi thành viên, cổ đông” .*
 
-Xem thêm: [Dịch vụ kế toán trọn gói của Nam Việt Luật](https://namvietluat.vn/dich-vu-ke-toan-bao-cao-thue/)
+Xem thêm: [Dịch vụ kế toán trọn gói của ](https://namvietluat.vn/dich-vu-ke-toan-bao-cao-thue/)**Law4you**[](https://namvietluat.vn/dich-vu-ke-toan-bao-cao-thue/)
 
 **Bước 3:** Thực hiện thay đổi nội dung đăng ký doanh nghiệp
 
@@ -330,9 +330,8 @@ Sau khi thực hiện thành lập công ty liên doanh, doanh nghiệp thực h
 
 – Công ty phải đăng ký ngành nghề kinh doanh phù hợp, liên quan đến hoạt động mà công ty dự định kinh doanh. Hơn nữa, cần tiến hành tra cứu mã ngành nghề theo hệ thống ngành nghề kinh tế cấp 4 Việt Nam mới nhất, để có thể ghi rõ mã ngành nghề trong giấy phép kinh doanh.
 
-+ Nếu chọn ngành nghề không yêu cầu điều kiện thì có thể đi vào hoạt động kinh doanh ngay sau khi có giấy phép thành lập công ty mà không phải chuẩn bị những điều kiện liên quan hay xin giấy phép đủ điều kiện kinh doanh.
-
-+ Nếu chọn ngành nghề yêu cầu điều kiện thì phải tiến hành đảm bảo các yêu cầu cần thiết, tiếp đó, tiến hành xin giấy phép kinh doanh rồi mới được đi vào hoạt động kinh doanh. 
+* Nếu chọn ngành nghề không yêu cầu điều kiện thì có thể đi vào hoạt động kinh doanh ngay sau khi có giấy phép thành lập công ty mà không phải chuẩn bị những điều kiện liên quan hay xin giấy phép đủ điều kiện kinh doanh.
+* Nếu chọn ngành nghề yêu cầu điều kiện thì phải tiến hành đảm bảo các yêu cầu cần thiết, tiếp đó, tiến hành xin giấy phép kinh doanh rồi mới được đi vào hoạt động kinh doanh. 
 
 > \>> Tham khảo chi tiết: [Danh mục ngành nghề đăng ký kinh doanh](https://namvietluat.vn/danh-muc-nganh-nghe-kinh-doanh-viet-nam/)
 
@@ -356,14 +355,14 @@ Sau khi thực hiện thành lập công ty liên doanh, doanh nghiệp thực h
 
 – Công ty liên doanh là một loại hình doanh nghiệp do hai bên hoặc nhiều bên hợp tác thành lập tại Việt Nam trên cơ sở hợp đồng liên doanh hoặc hiệp định ký giữa Chính phủ Việt Nam và Chính phủ nước ngoài. Đó cũng có thể là doanh nghiệp do doanh nghiệp có vốn đầu tư nước ngoài hợp tác với doanh nghiệp Việt Nam hoặc do doanh nghiệp liên doanh hợp tác với nhà đầu tư nước ngoài trên cơ sở hợp đồng liên doanh.
 
-## **Dịch vụ thành lập công ty liên doanh tại Nam Việt Luật**
+## **Dịch vụ thành lập công ty liên doanh tại Law4you**
 
-Nếu bạn có bất cứ thắc mắc nào liên quan cần tư vấn thêm, vui lòng liên hệ đến Nam Việt Luật để được tư vấn chi tiết hơn. Đến Nam Việt Luật, bạn sẽ được:
+Nếu bạn có bất cứ thắc mắc nào liên quan cần tư vấn thêm, vui lòng liên hệ đến **Law4you** để được tư vấn chi tiết hơn. Đến **Law4you**, bạn sẽ được:
 
 * Tư vấn miễn phí cho nhà đầu tư nước ngoài các quy định pháp luật liên quan công ty liên doanh
 * Hướng dẫn nhà đầu tư cung cấp tài liệu – hoàn thiện hồ sơ xin cấp Giấy chứng nhận đầu tư, mở công ty liên doanh với nước ngoài
 * Đại diện khách hàng thực hiện thủ tục mở Công ty liên doanh với nước ngoài tại Sở kế hoạch và đầu tư hoặc Ban quản lý khu công nghiệp:
-* Nam Việt Luật nộp hồ sơ xin Giấy chứng nhận đầu tư, mở doanh nghiệp liên doanh với nước ngoài
+* **Law4you** nộp hồ sơ xin Giấy chứng nhận đầu tư, mở doanh nghiệp liên doanh với nước ngoài
 * Theo dõi hồ sơ và trả lời của Sở kế hoạch và đầu tư hoặc Ban quản lý khu công nghiệp trong quá trình xử lý hồ sơ
 * Hướng dẫn nhà đầu tư bổ sung, chỉnh sửa hồ sơ khi cần thiết
 * Nhận kết quả là Giấy chứng nhận đầu tư/Giấy chứng nhận đăng ký doanh nghiệp tại Sở kế hoạch và đầu tư hoặc Ban quản lý khu công nghiệp
@@ -371,4 +370,4 @@ Nếu bạn có bất cứ thắc mắc nào liên quan cần tư vấn thêm, v
 
 \-------------------------------------------------- -------------------------------------------------- ----
 
-Bài viết về tư vấn **[thành lập công ty liên doanh](https://namvietluat.vn/dieu-kien-thanh-lap-cong-ty-lien-doanh/)** của công ty Nam Việt Luật chúng tôi đã giúp các nhà đầu tư trong và ngoài nước đang có nhu cầu hợp tác kinh doanh với nhau. Nếu Quý khách hàng còn đang băn khoăn hay thắc mắc về những hồ sơ và thủ tục liên quan, đừng ngần ngại hãy gọi ngay đến số Hotline của Nam Việt Luật để được các chuyên viên hỗ trợ tư vấn giải đáp miễn phí nhé!
+Bài viết về tư vấn **[thành lập công ty liên doanh](https://namvietluat.vn/dieu-kien-thanh-lap-cong-ty-lien-doanh/)** của công ty **Law4you**chúng tôi đã giúp các nhà đầu tư trong và ngoài nước đang có nhu cầu hợp tác kinh doanh với nhau. Nếu Quý khách hàng còn đang băn khoăn hay thắc mắc về những hồ sơ và thủ tục liên quan, đừng ngần ngại hãy gọi ngay đến số Hotline của **Law4you** để được các chuyên viên hỗ trợ tư vấn giải đáp miễn phí nhé!
