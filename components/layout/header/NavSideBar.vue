@@ -5,16 +5,13 @@
       <i class="fa-solid fa-xmark" @click="$nuxt.$emit('openSidebar')"></i>
     </div>
     <div :class="$style.search">
-      <el-input
-        :placeholder="$t('search')"
-        prefix-icon="el-icon-search"
-        v-model="search"
-      >
-      </el-input>
+      <SearchPost />
     </div>
     <div :class="$style.content">
       <div v-for="item in categories" :class="$style.item" :key="item.id">
-        <nuxt-link :to="item.path">{{ $translate('title', item) }}</nuxt-link>
+        <a href="#" @click="handleClick(item)">{{
+          $translate('title', item)
+        }}</a>
       </div>
     </div>
     <div :class="$style.lang">
@@ -26,17 +23,19 @@
 <script lang="ts">
 import Vue from 'vue'
 import LanguageSwitcher from '~/components/common/LanguageSwitcher.vue'
+import SearchPost from '~/components/common/SearchPost.vue'
 import { RootState } from '~/store/state'
 export default Vue.extend({
-  components: { LanguageSwitcher },
-  data() {
-    return {
-      search: ''
-    }
-  },
+  components: { LanguageSwitcher, SearchPost },
   computed: {
     categories() {
       return (this.$store.state as RootState).categories
+    }
+  },
+  methods: {
+    handleClick(item: any) {
+      this.$nuxt.$emit('openSidebar')
+      this.$router.push(`/category/${item.slug}`)
     }
   }
 })

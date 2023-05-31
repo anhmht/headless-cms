@@ -18,12 +18,7 @@
           </nuxt-link>
         </div>
         <div :class="$style.search">
-          <el-input
-            :placeholder="$t('search')"
-            prefix-icon="el-icon-search"
-            v-model="search"
-          >
-          </el-input>
+          <SearchPost />
           <LanguageSwitcher />
         </div>
       </div>
@@ -35,14 +30,10 @@
 <script>
 import Vue from 'vue'
 import LanguageSwitcher from '~/components/common/LanguageSwitcher.vue'
+import SearchPost from '~/components/common/SearchPost.vue'
 import Navbar from '~/components/layout/header/Navbar.vue'
 export default Vue.extend({
-  components: { Navbar, LanguageSwitcher },
-  data() {
-    return {
-      search: ''
-    }
-  }
+  components: { Navbar, LanguageSwitcher, SearchPost }
 })
 </script>
 <style lang="postcss" module>

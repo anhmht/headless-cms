@@ -43,11 +43,6 @@ export default Vue.extend({
       this.visible = !this.visible
     })
   }
-  // mounted() {
-  //   var chatbox = document.getElementById('fb-customer-chat')
-  //   chatbox.setAttribute('page_id', '388082838333792')
-  //   chatbox.setAttribute('attribution', 'biz_inbox')
-  // }
 })
 </script>
 <style lang="postcss" module>

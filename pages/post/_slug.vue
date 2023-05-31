@@ -41,6 +41,9 @@ export default Vue.extend({
     availableLocales() {
       return this.$i18n.locales
     }
+  },
+  watch: {
+    '$route.params.slug': '$fetch'
   }
 })
 </script>
