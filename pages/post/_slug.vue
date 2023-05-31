@@ -6,6 +6,10 @@
         :src="post.vn.thumbnail"
         :alt="post[$i18n.locale].title"
       />
+      <Breadcrumb
+        :categoryId="post.vn.category"
+        :title="post[$i18n.locale].title"
+      />
       <h1>{{ post[$i18n.locale].title }}</h1>
       <p>{{ post[$i18n.locale].summary }}</p>
       <nuxt-content :document="post[$i18n.locale]" />
@@ -15,7 +19,9 @@
 
 <script>
 import Vue from 'vue'
+import Breadcrumb from '~/components/common/Breadcrumb.vue'
 export default Vue.extend({
+  components: { Breadcrumb },
   data() {
     return {
       post: {}

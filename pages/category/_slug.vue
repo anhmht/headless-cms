@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <Breadcrumb
+      :title="$translate('title', category)"
+      :category-id="category.id"
+      is-category
+    />
     <div :class="$style.header">
       <h2>{{ $translate('title', category) }}</h2>
     </div>
@@ -42,9 +47,10 @@
 
 <script>
 import Vue from 'vue'
+import Breadcrumb from '~/components/common/Breadcrumb.vue'
 import DisplayCategory from '~/components/common/DisplayCategory.vue'
 export default Vue.extend({
-  components: { DisplayCategory },
+  components: { DisplayCategory, Breadcrumb },
   data() {
     return {
       posts: [],
