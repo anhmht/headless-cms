@@ -14,7 +14,7 @@
         </div>
         <div :class="$style.logo">
           <nuxt-link to="/">
-            <h1>LAW 4 YOU</h1>
+            <h1>Law 4 You</h1>
           </nuxt-link>
         </div>
         <div :class="$style.search">
@@ -41,7 +41,12 @@ export default Vue.extend({
   position: sticky;
   top: -80px;
   z-index: var(--z-index-sticky-header);
-  background: #fff;
+  background-image: linear-gradient(
+    240deg,
+    #a0e9e5 0%,
+    #fafdfe 20%,
+    #f3f3f3 100%
+  );
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px 4px;
   .wrapper {
     display: flex;
@@ -55,6 +60,9 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     justify-content: center;
+    h1 {
+      font-family: 'Rolling Beat';
+    }
   }
   .social,
   .search {
