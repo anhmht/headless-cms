@@ -82,6 +82,7 @@ export default Vue.extend({
 .root {
   .item {
     padding-bottom: var(--space-2x);
+    position: relative;
     h1 {
       margin-top: var(--space);
     }
@@ -97,6 +98,27 @@ export default Vue.extend({
     p {
       font-size: 1.2rem;
       padding: var(--space) 0;
+    }
+    &::after {
+      background-image: linear-gradient(
+        transparent,
+        var(--color-primary),
+        transparent
+      );
+      height: 70px;
+      width: 1px;
+      position: absolute;
+      right: -1px;
+      top: 65%;
+      content: '';
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      &::after {
+        top: 25%;
+        opacity: 1;
+      }
     }
   }
   .item + .item {

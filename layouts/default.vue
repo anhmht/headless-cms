@@ -1,5 +1,6 @@
 <template>
-  <div :class="[$style.root, visible && $style.overflow]">
+  <div :class="[$style.root, visible && $style.overflow, 'page']">
+    <PreLoading v-if="loading" />
     <transition name="fade">
       <div
         v-if="visible"
@@ -27,20 +28,45 @@
 
 <script>
 import Vue from 'vue'
+import PreLoading from '~/components/common/PreLoading.vue'
 import Footer from '~/components/layout/footer/Footer.vue'
 import Header from '~/components/layout/header/Header.vue'
 import NavSideBar from '~/components/layout/header/NavSideBar.vue'
+import imagesloaded from 'imagesloaded'
+import gsap from 'gsap'
+
 export default Vue.extend({
-  components: { Header, Footer, NavSideBar },
+  components: { Header, Footer, NavSideBar, PreLoading },
   middleware: ['categories'],
   data() {
     return {
-      visible: false
+      visible: false,
+      loading: true
     }
   },
   created() {
     this.$nuxt.$on('openSidebar', () => {
       this.visible = !this.visible
+    })
+  },
+  mounted() {
+    const tl = gsap.timeline()
+    const vm = this
+    const imageLoad = imagesloaded(document.querySelector('.page'))
+    imageLoad.on('done', () => {
+      setTimeout(() => {
+        tl.to('.main', {
+          opacity: 0
+        }).to('.blinder', {
+          height: 0,
+          duration: 1,
+          stagger: 0.3,
+          ease: 'power3.out'
+        })
+      }, 1000)
+      setTimeout(() => {
+        vm.loading = false
+      }, 4000)
     })
   }
 })
