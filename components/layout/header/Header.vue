@@ -2,19 +2,10 @@
   <div :class="$style.root">
     <div class="container">
       <div :class="$style.wrapper">
-        <div :class="$style.social">
-          <el-avatar size="small" src="/images/media/zalo.png"></el-avatar>
-          <el-avatar size="small" src="/images/media/facebook.png"></el-avatar>
-          <el-avatar
-            size="small"
-            src="/images/media/instagram.webp"
-          ></el-avatar>
-          <el-avatar size="small" src="/images/media/skype.png"></el-avatar>
-          <el-avatar size="small" src="/images/media/telegram.png"></el-avatar>
-        </div>
         <div :class="$style.logo">
           <nuxt-link to="/">
-            <h1>Law 4 You</h1>
+            <img src="/images/LAW_4_YOU-transparent.png" alt="logo" />
+            <h1>LAW 4 YOU - Luật cho bạn</h1>
           </nuxt-link>
         </div>
         <div :class="$style.search">
@@ -51,6 +42,7 @@ export default Vue.extend({
   .wrapper {
     display: flex;
     padding: var(--space) 0;
+    justify-content: space-between;
     @media screen and (max-width: 1199px) {
       display: none;
     }
@@ -59,16 +51,23 @@ export default Vue.extend({
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    a {
+      display: flex;
+      align-items: center;
+    }
     h1 {
-      font-family: 'Rolling Beat';
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    img {
+      margin-right: var(--space);
+      width: 40px;
+      height: 40px;
     }
   }
-  .social,
   .search {
-    flex-basis: 30%;
-  }
-  .search {
+    flex-basis: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -78,6 +77,7 @@ export default Vue.extend({
   .social {
     display: flex;
     align-items: center;
+
     span + span {
       margin-left: var(--space);
     }

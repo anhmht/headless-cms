@@ -8,6 +8,7 @@
         @click="visible = !visible"
       ></div>
     </transition>
+    <SocialMedia v-if="!loading" />
     <NavSideBar :class="visible ? $style.visibleSidebar : ''" />
     <div :class="visible ? $style.visibleSidebar : ''">
       <Header />
@@ -34,9 +35,11 @@ import Header from '~/components/layout/header/Header.vue'
 import NavSideBar from '~/components/layout/header/NavSideBar.vue'
 import imagesloaded from 'imagesloaded'
 import gsap from 'gsap'
+import { sleep } from '~/utils'
+import SocialMedia from '~/components/layout/SocialMedia.vue'
 
 export default Vue.extend({
-  components: { Header, Footer, NavSideBar, PreLoading },
+  components: { Header, Footer, NavSideBar, PreLoading, SocialMedia },
   middleware: ['categories'],
   data() {
     return {
@@ -53,20 +56,19 @@ export default Vue.extend({
     const tl = gsap.timeline()
     const vm = this
     const imageLoad = imagesloaded(document.querySelector('.page'))
-    imageLoad.on('done', () => {
-      setTimeout(() => {
-        tl.to('.main', {
-          opacity: 0
-        }).to('.blinder', {
-          height: 0,
-          duration: 1,
-          stagger: 0.3,
-          ease: 'power3.out'
-        })
-      }, 1000)
-      setTimeout(() => {
-        vm.loading = false
-      }, 4000)
+    imageLoad.on('done', async () => {
+      await sleep(1000)
+      tl.to('.main', {
+        opacity: 0
+      }).to('.blinder', {
+        height: 0,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: 'power3.out'
+      })
+      await sleep(3000)
+      vm.loading = false
     })
   }
 })

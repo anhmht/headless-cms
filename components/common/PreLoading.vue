@@ -23,7 +23,6 @@ import gsap from 'gsap'
 export default Vue.extend({
   mounted() {
     const text = new SplitType('#my-text')
-
     gsap.to('.char', {
       opacity: 1,
       stagger: 0.1,
@@ -88,10 +87,5 @@ export default Vue.extend({
 <style>
 .char {
   opacity: 0;
-  /* animation: animateLoading 1s infinite; */
-}
-@keyframes animateLoading {
-  to {
-  }
 }
 </style>
