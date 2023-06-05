@@ -3,6 +3,7 @@
     <div class="container">
       <div :class="$style.footer">
         <div :class="$style.title">
+          <img src="~/static/images/LAW_4_YOU-transparent.png" alt="logo" />
           <h1>LAW 4 YOU</h1>
         </div>
         <div :class="$style.category">
@@ -13,7 +14,7 @@
           </div>
         </div>
         <div :class="$style.copyright">
-          <p>© 2020 Law 4 you. All rights reserved.</p>
+          <p>© 2015 Law 4 you. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -35,10 +36,13 @@ export default Vue.extend({
 .root {
   background-color: #f7f7f7;
   margin-top: var(--space-4x);
-  padding: var(--space-2x) 0;
   .title {
     h1 {
       text-align: center;
+    }
+    img {
+      margin: auto;
+      width: 200px;
     }
   }
   .category {
