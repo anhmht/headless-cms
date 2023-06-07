@@ -29,13 +29,7 @@ thumbnail: /images/uploads/culture-business.webp
 
 * 450.000 đ phí khắc dấu tròn công ty và công bố mẫu dấu lên cổng thông tin đăng ký doanh nghiệp quốc gia.
 * 100.000 đ lệ phí công bố thành lập doanh nghiệp lên cổng thông tin đăng ký doanh nghiệp quốc gia.
-* 450.000 đ phí đại diện ủy quyền thay mặt khách hàng nộp hồ sơ và nhận kết quả là giấy chứng nhận đăng ký doanh nghiệp tại cơ quan nhà nước
-
-**(Gọi 24/7): [0778000555](tel:0778000555) - [0909608102](tel:0909608102)  -  [0782222229](tel:0782222229)**
-
-**Gọi (7:45 – 17:15): [02873000555](tel:02873000555)**
-
-**(Email: info@namvietluat.vn)**
+* 450.000 đ phí đại diện ủy quyền thay mặt khách hàng nộp hồ sơ và nhận kết quả là giấy chứng nhận đăng ký doanh nghiệp tại cơ quan nhà nước.
 
 ## Khách hàng cần chuẩn bị gì khi thành lập doanh nghiệp?
 
@@ -219,6 +213,6 @@ Việc thành lập công ty cần chuẩn bị nhiều hồ sơ, thủ tục, g
 | **3**    | Chuyển hồ sơ thuế khác quận                                                                                                                                                                  | 800.000                | 7                             |
 | **4**    | Phát hành hóa đơn điện tử                                                                                                                                                                    | 500.000                | 1-3                           |
 
-**(Gọi 24/7): [](tel:0778000555)**
+**(Gọi 24/7):** [](tel:0778000555)
 
 Nếu bạn đang tìm một nơi uy tín để sử dụng dịch vụ thành lập công ty trọn gói, uy tín, giá rẻ thì **Law4you** là nơi đáng để bạn trao gửi niềm tin. Nếu bạn còn băn khoăn hoặc có vướng mắc về hồ sơ, [thủ tục thành lập công ty](https://namvietluat.vn/thu-tuc-thanh-lap-cong-ty-tron-goi/) thì đừng ngần ngại hãy liên hệ ngay với số Hotline của **Law4you** để được chuyên viên hỗ trợ tư vấn nhiệt tình giải đáp hết các thắc mắc nhé.
