@@ -44,31 +44,35 @@ const vm = useNuxtApp()
 const newPosts = computed(() => {
   return vm.$i18n.locale.value === 'vn' ? posts.value : postsLocale.value
 })
-async function fetchData() {
-  posts.value = await queryContent('post', 'vn').limit(props.limit).find()
-  postsLocale.value = []
-  posts.value.forEach(async (element) => {
-    postsLocale.value.push(
-      await queryContent(
-        'post',
-        vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
-      )
-        .where({
-          _file: element._file.replace(
-            'vn',
-            vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
-          )
-        })
-        .findOne()
-    )
-  })
-}
+
 function getSlug(path) {
   return path.replace(`/${vm.$i18n.locale.value}`, '')
 }
-onMounted(async () => {
-  await fetchData()
+
+const { data: postVN } = await useAsyncData(() =>
+  queryContent('post', 'vn').limit(props.limit).find()
+)
+
+const locale = vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
+
+const { data: dataLocale } = await useAsyncData(async () => {
+  const postEN = []
+  await Promise.all(
+    postVN.value.map(async (element) => {
+      postEN.push(
+        await queryContent('post', locale)
+          .where({
+            _slug: element._slug
+          })
+          .findOne()
+      )
+    })
+  )
+  return postEN
 })
+
+posts.value = postVN.value
+postsLocale.value = dataLocale.value
 </script>
 <style lang="postcss" module>
 .root {
