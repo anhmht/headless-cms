@@ -14,7 +14,9 @@
         :key="post.id"
       >
         <div :class="$style.image">
-          <img :src="posts[index].thumbnail" :alt="post.title" />
+          <nuxt-link :to="getSlug(post._path)">
+            <img :src="posts[index].thumbnail" :alt="post.title" />
+          </nuxt-link>
         </div>
         <div :class="$style.content">
           <DisplayCategory :id="posts[index].category" />
@@ -68,7 +70,9 @@ const { data: dataLocale } = await useAsyncData(async () => {
       )
     })
   )
-  return postEN
+  return useSortBy(postEN, (item) =>
+    postVN.value.indexOf(postVN.value.find((i) => i._slug === item._slug))
+  )
 })
 
 posts.value = postVN.value
@@ -92,9 +96,6 @@ postsLocale.value = dataLocale.value
       width: 100%;
       object-fit: cover;
       cursor: pointer;
-      &:hover {
-        opacity: 0.7;
-      }
     }
     h4 {
       font-size: 1.2rem;

@@ -78,25 +78,31 @@ const summary = (summary, length = 250) => {
 
 const locale = vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
 
-const { data: postVN } = await useAsyncData(() =>
-  queryContent('post', 'vn').where({ category: category.value.id }).find()
+const { data: postVN } = await useAsyncData(
+  `category_${category.value.id}`,
+  () => queryContent('post', 'vn').where({ category: category.value.id }).find()
 )
 
-const { data: dataLocale } = await useAsyncData(async () => {
-  const postEN = []
-  await Promise.all(
-    postVN.value.map(async (post) => {
-      postEN.push(
-        await queryContent('post', locale)
-          .where({
-            _slug: post._slug
-          })
-          .findOne()
-      )
-    })
-  )
-  return postEN
-})
+const { data: dataLocale } = await useAsyncData(
+  `category-locale_${category.value.id}`,
+  async () => {
+    const postEN = []
+    await Promise.all(
+      postVN.value.map(async (post) => {
+        postEN.push(
+          await queryContent('post', locale)
+            .where({
+              _slug: post._slug
+            })
+            .findOne()
+        )
+      })
+    )
+    return useSortBy(postEN, (item) =>
+      postVN.value.indexOf(postVN.value.find((i) => i._slug === item._slug))
+    )
+  }
+)
 
 posts.value = postVN.value
 postsLocale.value = dataLocale.value

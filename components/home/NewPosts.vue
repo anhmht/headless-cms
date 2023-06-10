@@ -59,7 +59,9 @@ const { data: dataLocale } = await useAsyncData(
         )
       })
     )
-    return postEN
+    return useSortBy(postEN, (item) =>
+      postVN.value.indexOf(postVN.value.find((i) => i._slug === item._slug))
+    )
   }
 )
 
