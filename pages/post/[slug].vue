@@ -24,21 +24,25 @@ const route = useRoute()
 const availableLocales = computed(() => {
   return vm.$i18n.locales.value
 })
-async function fetchData() {
-  availableLocales.value.forEach(async (locale) => {
-    const res = await queryContent(
-      'post',
-      locale.code,
-      route.params.slug
-    ).findOne()
-    if (res) {
-      post.value[locale.code] = res
-    }
-  })
-}
-onMounted(async () => {
-  await fetchData()
+
+const { data } = await useAsyncData(async () => {
+  const result = {}
+  await Promise.all(
+    availableLocales.value.map(async (locale) => {
+      const res = await queryContent(
+        'post',
+        locale.code,
+        route.params.slug
+      ).findOne()
+      if (res) {
+        result[locale.code] = res
+      }
+    })
+  )
+  return result
 })
+
+post.value = data.value
 </script>
 <style lang="postcss" module>
 .root {
