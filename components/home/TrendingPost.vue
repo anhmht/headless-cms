@@ -18,7 +18,7 @@
         </div>
         <div :class="$style.content">
           <DisplayCategory :id="posts[index].category" />
-          <nuxt-link :to="`post/${post.slug}`">
+          <nuxt-link :to="getSlug(post._path)">
             <h4>{{ post.title }}</h4></nuxt-link
           >
         </div>
@@ -27,53 +27,57 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import DisplayCategory from '../common/DisplayCategory.vue'
-export default Vue.extend({
-  components: { DisplayCategory },
-  props: {
-    isSideBar: {
-      type: Boolean,
-      default: false
-    },
-    limit: {
-      type: Number,
-      default: 4
-    }
+<script setup>
+const props = defineProps({
+  isSideBar: {
+    type: Boolean,
+    default: false
   },
-  data() {
-    return {
-      posts: [],
-      postsLocale: []
-    }
-  },
-  async fetch() {
-    this.posts = await this.$content('post', 'vn').limit(this.limit).fetch()
-    this.postsLocale = []
-    this.posts.forEach(async (element) => {
-      this.postsLocale.push(
-        ...(await this.$content(
-          'post',
-          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
-        )
-          .where({ slug: element.slug })
-          .fetch())
-      )
-    })
-  },
-  computed: {
-    newPosts() {
-      return this.$i18n.locale === 'vn' ? this.posts : this.postsLocale
-    }
-  },
-  watch: {
-    '$i18n.locale': '$fetch'
+  limit: {
+    type: Number,
+    default: 4
   }
 })
+const posts = ref([])
+const postsLocale = ref([])
+const vm = useNuxtApp()
+const newPosts = computed(() => {
+  return vm.$i18n.locale.value === 'vn' ? posts.value : postsLocale.value
+})
+
+function getSlug(path) {
+  return path.replace(`/${vm.$i18n.locale.value}`, '')
+}
+
+const { data: postVN } = await useAsyncData(() =>
+  queryContent('post', 'vn').limit(props.limit).find()
+)
+
+const locale = vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
+
+const { data: dataLocale } = await useAsyncData(async () => {
+  const postEN = []
+  await Promise.all(
+    postVN.value.map(async (element) => {
+      postEN.push(
+        await queryContent('post', locale)
+          .where({
+            _slug: element._slug
+          })
+          .findOne()
+      )
+    })
+  )
+  return postEN
+})
+
+posts.value = postVN.value
+postsLocale.value = dataLocale.value
 </script>
 <style lang="postcss" module>
 .root {
+  position: sticky;
+  top: 80px;
   .posts {
     display: flex;
     flex-wrap: wrap;

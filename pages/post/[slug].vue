@@ -1,6 +1,6 @@
 <template>
   <div :class="[$style.root, 'container']">
-    <div v-if="!$fetchState.pending">
+    <div v-if="post.vn">
       <img
         :class="$style.banner"
         :src="post.vn.thumbnail"
@@ -12,45 +12,32 @@
       />
       <h1>{{ post[$i18n.locale].title }}</h1>
       <p>{{ post[$i18n.locale].summary }}</p>
-      <nuxt-content :document="post[$i18n.locale]" />
+      <ContentRenderer :value="post[$i18n.locale]" />
     </div>
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import Breadcrumb from '~/components/common/Breadcrumb.vue'
-export default Vue.extend({
-  components: { Breadcrumb },
-  data() {
-    return {
-      post: {}
+<script setup>
+let post = ref({})
+const vm = useNuxtApp()
+const route = useRoute()
+const availableLocales = computed(() => {
+  return vm.$i18n.locales.value
+})
+async function fetchData() {
+  availableLocales.value.forEach(async (locale) => {
+    const res = await queryContent(
+      'post',
+      locale.code,
+      route.params.slug
+    ).findOne()
+    if (res) {
+      post.value[locale.code] = res
     }
-  },
-  async fetch() {
-    try {
-      this.availableLocales.forEach(async (locale) => {
-        const post = await this.$content(
-          'post',
-          locale.code,
-          this.$route.params.slug
-        ).fetch()
-        if (post) {
-          this.post = { ...this.post, [locale.code]: post }
-        }
-      })
-    } catch (e) {
-      console.log(e)
-    }
-  },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales
-    }
-  },
-  watch: {
-    '$route.params.slug': '$fetch'
-  }
+  })
+}
+onMounted(async () => {
+  await fetchData()
 })
 </script>
 <style lang="postcss" module>

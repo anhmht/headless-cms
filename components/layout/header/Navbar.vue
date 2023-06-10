@@ -18,7 +18,7 @@
         <nuxt-link to="/">{{ $t('home') }}</nuxt-link>
       </div>
       <div v-for="item in categories" :class="$style.item" :key="item.id">
-        <nuxt-link :to="item.path">{{ $translate('title', item) }}</nuxt-link>
+        <nuxt-link :to="item._path">{{ $translate('title', item) }}</nuxt-link>
       </div>
       <div :class="$style.item">
         <nuxt-link to="/">{{ $t('contact') }}</nuxt-link>
@@ -27,21 +27,19 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import { RootState } from '~/store/state'
-export default Vue.extend({
+<script>
+export default {
   computed: {
     categories() {
-      return (this.$store.state as RootState).categories
+      return this.$store.$state.categories
     }
   },
   methods: {
     handleOpen() {
-      this.$nuxt.$emit('openSidebar')
+      this.$eventBus.emit('openSidebar')
     }
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

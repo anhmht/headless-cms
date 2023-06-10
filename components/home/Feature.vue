@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.root">
     <div :class="$style.item" v-for="(post, index) in features" :key="post.id">
-      <nuxt-link :to="`post/${post.slug}`">
+      <nuxt-link :to="getSlug(post._path)">
         <img :src="posts[index].thumbnail" :alt="post.title" />
         <div :class="$style.content">
           <DisplayCategory :id="posts[index].category" :link="false" />
@@ -12,59 +12,50 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import DisplayCategory from '~/components/common/DisplayCategory.vue'
-export default Vue.extend({
-  components: {
-    DisplayCategory
-  },
-  props: {
-    skip: {
-      type: Number,
-      default: 0
-    }
-  },
-  data() {
-    return {
-      posts: [],
-      postsLocale: []
-    }
-  },
-  async fetch() {
-    this.posts = await this.$content('post', 'vn')
-      .skip(this.skip)
-      .limit(3)
-      .fetch()
-    this.postsLocale = []
-    this.posts.forEach(async (element) => {
-      this.postsLocale.push(
-        ...(await this.$content(
-          'post',
-          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
-        )
-          .where({ slug: element.slug })
-          .fetch())
-      )
-    })
-  },
-  computed: {
-    features() {
-      return this.$i18n.locale === 'vn' ? this.posts : this.postsLocale
-    }
-  },
-  watch: {
-    '$i18n.locale': '$fetch'
-  },
-  methods: {
-    summary(summary) {
-      if (summary.length <= 250) {
-        return summary
-      }
-      return `${summary.substring(0, 250)}...`
-    }
+<script setup>
+const props = defineProps({
+  skip: {
+    type: Number,
+    default: 0
   }
 })
+
+const posts = ref([])
+const postsLocale = ref([])
+const vm = useNuxtApp()
+
+const features = computed(() => {
+  return vm.$i18n.locale.value === 'vn' ? posts.value : postsLocale.value
+})
+
+function getSlug(path) {
+  return path.replace(`/${vm.$i18n.locale.value}`, '')
+}
+
+const { data: postVN } = await useAsyncData(() =>
+  queryContent('post', 'vn').skip(props.skip).limit(3).find()
+)
+
+const locale = vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
+
+const { data: dataLocale } = await useAsyncData(async () => {
+  const postEN = []
+  await Promise.all(
+    postVN.value.map(async (element) => {
+      postEN.push(
+        await queryContent('post', locale)
+          .where({
+            _slug: element._slug
+          })
+          .findOne()
+      )
+    })
+  )
+  return postEN
+})
+
+posts.value = postVN.value
+postsLocale.value = dataLocale.value
 </script>
 <style lang="postcss" module>
 .root {

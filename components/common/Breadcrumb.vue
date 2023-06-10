@@ -1,16 +1,17 @@
 <template>
-  <el-breadcrumb separator="/">
-    <el-breadcrumb-item to="/">{{ $t('home') }}</el-breadcrumb-item>
-    <el-breadcrumb-item v-if="!isCategory" :to="category.path">{{
-      $translate('title', category)
-    }}</el-breadcrumb-item>
-    <el-breadcrumb-item>{{ title }}</el-breadcrumb-item>
-  </el-breadcrumb>
+  <client-only>
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item to="/">{{ $t('home') }}</el-breadcrumb-item>
+      <el-breadcrumb-item v-if="!isCategory" :to="category._path">{{
+        $translate('title', category)
+      }}</el-breadcrumb-item>
+      <el-breadcrumb-item>{{ title }}</el-breadcrumb-item>
+    </el-breadcrumb>
+  </client-only>
 </template>
 
 <script>
-import Vue from 'vue'
-export default Vue.extend({
+export default {
   props: {
     title: {
       type: String,
@@ -27,13 +28,13 @@ export default Vue.extend({
   },
   computed: {
     categories() {
-      return this.$store.state.categories
+      return toRaw(this.$store.$state.categories)
     },
     category() {
       return this.categories.find((item) => item.id === this.categoryId)
     }
   }
-})
+}
 </script>
 
 <style></style>

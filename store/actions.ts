@@ -1,38 +1,15 @@
-import { ActionTree } from 'vuex'
-import { RootState } from './state'
+import { useState } from './state'
 
-// -----------------------------------------------------------------------------
-//
-//  Constants
-//
-// -----------------------------------------------------------------------------
+export const useActions = defineStore('actions', () => {
+  const state = useState()
 
-export namespace Actions {
-  // ---------------------------------------------------------------------------
-  //
-  //  Action Types
-  //
-  // ---------------------------------------------------------------------------
-
-  export const TYPE = {
-  } as const
-
-  // ---------------------------------------------------------------------------
-  //
-  //  Action Payloads
-  //
-  // ---------------------------------------------------------------------------
-
-  export namespace Payload {
+  function setCategories(payload: Array<any>) {
+    state.categories = payload
   }
-}
 
-// -----------------------------------------------------------------------------
-//
-//  Action Implements
-//
-// -----------------------------------------------------------------------------
-
-export default {
-
-} as ActionTree<RootState, any>
+  // Note you are free to define as many internal functions as you want.
+  // You only expose the functions that are returned.
+  return {
+    setCategories
+  }
+})

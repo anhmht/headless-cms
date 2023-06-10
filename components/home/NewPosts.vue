@@ -3,19 +3,19 @@
     <div :class="$style.item" v-for="(post, index) in newPosts" :key="post.id">
       <el-row :gutter="16">
         <el-col :sm="12">
-          <nuxt-link :to="`post/${post.slug}`">
+          <nuxt-link :to="getSlug(post._path)">
             <img :src="posts[index].thumbnail" :alt="post.title" />
           </nuxt-link>
         </el-col>
         <el-col :sm="12">
           <div :class="$style.content">
             <DisplayCategory :id="posts[index].category" />
-            <nuxt-link :to="`post/${post.slug}`">
+            <nuxt-link :to="getSlug(post._path)">
               <h1>{{ post.title }}</h1>
             </nuxt-link>
 
             <p>{{ summary(post.summary) }}</p>
-            <nuxt-link :to="`post/${post.slug}`">{{ $t('more') }}</nuxt-link>
+            <nuxt-link :to="getSlug(post._path)">{{ $t('more') }}</nuxt-link>
           </div>
         </el-col>
       </el-row>
@@ -23,60 +23,59 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import DisplayCategory from '~/components/common/DisplayCategory.vue'
-export default Vue.extend({
-  components: {
-    DisplayCategory
-  },
-  props: {
-    skip: {
-      type: Number,
-      default: 0
-    }
-  },
-  data() {
-    return {
-      posts: [],
-      postsLocale: []
-    }
-  },
-  async fetch() {
-    this.posts = await this.$content('post', 'vn')
-      .skip(this.skip)
-      .limit(3)
-      .fetch()
-    this.postsLocale = []
-    this.posts.forEach(async (element) => {
-      this.postsLocale.push(
-        ...(await this.$content(
-          'post',
-          this.$i18n.locale === 'vn' ? 'en' : this.$i18n.locale
-        )
-          .where({ slug: element.slug })
-          .fetch())
-      )
-    })
-  },
-  computed: {
-    newPosts() {
-      return this.$i18n.locale === 'vn' ? this.posts : this.postsLocale
-    }
-  },
-  watch: {
-    '$i18n.locale': '$fetch'
-  },
-
-  methods: {
-    summary(summary) {
-      if (summary.length <= 250) {
-        return summary
-      }
-      return `${summary.substring(0, 250)}...`
-    }
+<script setup>
+const props = defineProps({
+  skip: {
+    type: Number,
+    default: 0
   }
 })
+const posts = ref([])
+const postsLocale = ref([])
+const vm = useNuxtApp()
+
+const newPosts = computed(() => {
+  return vm.$i18n.locale.value === 'vn' ? posts.value : postsLocale.value
+})
+
+const { data: postVN } = await useAsyncData(`news-skip-${props.skip}`, () =>
+  queryContent('post', 'vn').skip(props.skip).limit(3).find()
+)
+
+const locale = vm.$i18n.locale.value === 'vn' ? 'en' : vm.$i18n.locale.value
+
+const { data: dataLocale } = await useAsyncData(
+  `newsEN-skip-${props.skip}`,
+  async () => {
+    const postEN = []
+    await Promise.all(
+      postVN.value.map(async (element) => {
+        postEN.push(
+          await queryContent('post', locale)
+            .where({
+              _slug: element._slug
+            })
+            .findOne()
+        )
+      })
+    )
+    return postEN
+  }
+)
+
+posts.value = postVN.value
+postsLocale.value = dataLocale.value
+
+function getSlug(path) {
+  return path.replace(`/${vm.$i18n.locale.value}`, '')
+}
+
+function summary(summary) {
+  if (summary.length <= 250) {
+    return summary
+  }
+  return `${summary.substring(0, 250)}...`
+}
 </script>
 <style lang="postcss" module>
 .root {

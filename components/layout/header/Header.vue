@@ -19,13 +19,12 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import LanguageSwitcher from '~/components/common/LanguageSwitcher.vue'
 import SearchPost from '~/components/common/SearchPost.vue'
 import Navbar from '~/components/layout/header/Navbar.vue'
-export default Vue.extend({
+export default {
   components: { Navbar, LanguageSwitcher, SearchPost }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {
