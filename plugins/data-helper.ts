@@ -1,21 +1,16 @@
-import { NuxtAppOptions, Plugin } from '@nuxt/types'
 
-const translate = (key: string, object: any, context: NuxtAppOptions) => {
+const translate = (key: string, object: any) => {
+  const { $i18n } = useNuxtApp() as any
   return object[
-    `${key}${(context.i18n.locale as string).toUpperCase()}`
+    `${key}${(toRaw($i18n.locale).value as string).toUpperCase()}`
   ] ?? object.title
 }
 
-const dataHelperPlugin: Plugin = ({ app }, inject) => {
-  inject('translate', (key: string, object: any) => translate(key, object, app))
-}
-
-export default dataHelperPlugin
-
-interface DataHelperSchema {
-  $translate: typeof translate
-}
-
-declare module 'vue/types/vue' {
-  interface Vue extends DataHelperSchema { }
-}
+export default defineNuxtPlugin(() => {
+  // You can alternatively use this format, which comes with automatic type support
+  return {
+    provide: {
+      translate: (key: string, object: any) => translate(key, object)
+    }
+  }
+})

@@ -7,9 +7,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
+export default {
   props: {
     post: {
       type: Object,
@@ -17,7 +15,7 @@ export default Vue.extend({
     }
   },
   computed: {}
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

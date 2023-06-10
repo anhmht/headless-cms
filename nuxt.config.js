@@ -1,19 +1,35 @@
 import fs from 'fs'
 import path from 'path'
+import { defineNuxtConfig } from 'nuxt/config'
+import { fileURLToPath } from 'node:url'
 
-export default {
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  vite: {
+    server: {
+      watch: {
+        usePolling: true
+      }
+    }
+  },
   /*
    ** SSL on local development (checkout README.md for instructions)
    */
-  // server: {
-  //   port: process.env.NUXT_PORT,
-  //   https: {
-  //     key: fs.readFileSync(path.resolve(__dirname, '.ssl/localhost.key')),
-  //     cert: fs.readFileSync(path.resolve(__dirname, '.ssl/localhost.crt'))
-  //   }
+  server: {
+    port: process.env.NUXT_PORT,
+    https: {
+      key: fs.readFileSync(
+        fileURLToPath(new URL('.ssl/localhost.key', import.meta.url))
+      ),
+      cert: fs.readFileSync(
+        fileURLToPath(new URL('.ssl/localhost.crt', import.meta.url))
+      )
+    }
+  },
+  // experimental: {
+  //   viewTransition: true
   // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -26,7 +42,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'view-transitions', content: 'same-origin' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [{ src: '/js/fb-sdk.js' }]
@@ -35,25 +52,42 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/styles/main.css',
-    'element-ui/lib/theme-chalk/index.css',
     '~/assets/styles/index.css',
     '@fortawesome/fontawesome-free/css/all.css'
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/element-ui', '@/plugins/data-helper.ts'],
+  bridge: {
+    autoImports: true
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false
+    }
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@element-plus/nuxt',
+    '@pinia/nuxt',
+    'nuxt-lodash'
+  ],
+
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore', // import { defineStore } from 'pinia'
+      ['defineStore', 'definePiniaStore'] // import { defineStore as definePiniaStore } from 'pinia'
+    ]
+  },
+
+  imports: {
+    dirs: ['store']
+  },
 
   content: {
     liveEdit: false
@@ -77,41 +111,36 @@ export default {
       }
     ],
     langDir: 'locales/',
-    vueI18n: {
-      fallbackLocale: 'vn'
+    vueI18n: './i18n.config.ts'
+  },
+
+  postcss: {
+    preset: {
+      // Specifies sources where variables like Custom Media, Custom Properties, etc.
+      // https://github.com/csstools/postcss-preset-env#importfrom
+      importFrom: ['assets/styles/variables.css'],
+
+      // Enables or disables specific polyfills
+      // https://github.com/csstools/postcss-preset-env#features
+      features: {
+        'nesting-rules': true,
+        'custom-media-queries': true,
+        stage: 1
+      }
+    },
+    plugins: {
+      'postcss-mixins': {},
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
+      tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
+      autoprefixer: {}
     }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/, 'dom7', 'ssr-window'],
+    transpile: ['dom7', 'ssr-window']
     // Customize PostCSS Loader plugins
     // https://nuxtjs.org/api/configuration-build/#postcss
-    postcss: {
-      // Nuxt.js has applied PostCSS Preset Env.
-      // By default it enables Stage 2 features and Autoprefixer,
-      // you can use `build.postcss.preset` to configure it.
-      // https://preset-env.cssdb.org/features#stage-2
-      preset: {
-        // Specifies sources where variables like Custom Media, Custom Properties, etc.
-        // https://github.com/csstools/postcss-preset-env#importfrom
-        importFrom: ['assets/styles/variables.css'],
-
-        // Enables or disables specific polyfills
-        // https://github.com/csstools/postcss-preset-env#features
-        features: {
-          'nesting-rules': true,
-          'custom-media-queries': true,
-          stage: 1
-        }
-      },
-      plugins: {
-        'postcss-mixins': {},
-        'postcss-import': {},
-        'tailwindcss/nesting': {},
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
-        autoprefixer: {}
-      }
-    }
   }
-}
+})

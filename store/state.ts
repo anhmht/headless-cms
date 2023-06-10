@@ -1,20 +1,13 @@
-
-// -----------------------------------------------------------------------------
-//
-//  (Root)State Type
-//
-// -----------------------------------------------------------------------------
-
-export interface RootState {
-  categories: any
+export interface State {
+  categories: Array<any>
 }
 
-// -----------------------------------------------------------------------------
-//
-//  (Root)State Instance
-//
-// -----------------------------------------------------------------------------
+export const useState = defineStore({
+  id: 'state',
 
-export default (): RootState => ({
-  categories: [],
+  state: (): State => {
+    return {
+      categories: []
+    }
+  }
 })

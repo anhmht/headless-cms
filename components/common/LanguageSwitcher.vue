@@ -12,8 +12,7 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
+export default {
   name: 'LanguageSwitcher',
   data() {
     return {
@@ -31,11 +30,11 @@ export default Vue.extend({
   },
   methods: {
     changeLocale(locale: string) {
-      ;(this as any).$i18n.setLocale(locale)
       this.active = locale
+      ;(this as any).$i18n.setLocale(locale)
     }
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

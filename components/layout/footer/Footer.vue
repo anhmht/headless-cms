@@ -3,12 +3,12 @@
     <div class="container">
       <div :class="$style.footer">
         <div :class="$style.title">
-          <img src="~/static/images/LAW_4_YOU-transparent.png" alt="logo" />
+          <img src="/images/LAW_4_YOU-transparent.png" alt="logo" />
           <h1>LAW 4 YOU</h1>
         </div>
         <div :class="$style.category">
           <div v-for="item in categories" :key="item.id" :class="$style.item">
-            <nuxt-link :to="item.path">{{
+            <nuxt-link :to="item._path">{{
               $translate('title', item)
             }}</nuxt-link>
           </div>
@@ -22,15 +22,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { RootState } from '~/store/state'
-export default Vue.extend({
+export default {
   computed: {
     categories(): any {
-      return (this.$store.state as RootState).categories
+      return this.$store.$state.categories
     }
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

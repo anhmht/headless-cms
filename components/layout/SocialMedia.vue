@@ -5,35 +5,34 @@
         href="https://www.facebook.com/profile.php?id=100064108086338"
         target="_blank"
       >
-        <img src="~/static/images/media/facebook-logo.png" alt="logo" />
+        <img src="/images/media/facebook-logo.png" alt="logo" />
       </a>
     </li>
     <li :class="[$style.item, $style.instagram]">
       <nuxt-link to="/">
-        <img src="~/static/images/media/instagram-logo.png" alt="logo" />
+        <img src="/images/media/instagram-logo.png" alt="logo" />
       </nuxt-link>
     </li>
     <li :class="[$style.item, $style.zalo]">
       <nuxt-link to="/">
-        <img src="~/static/images/media/zalo-logo.png" alt="logo" />
+        <img src="/images/media/zalo-logo.png" alt="logo" />
       </nuxt-link>
     </li>
     <li :class="[$style.item, $style.whatsapp]">
       <nuxt-link to="/">
-        <img src="~/static/images/media/whatsapp-logo.png" alt="logo" />
+        <img src="/images/media/whatsapp-logo.png" alt="logo" />
       </nuxt-link>
     </li>
     <li :class="[$style.item, $style.skype]">
       <nuxt-link to="/">
-        <img src="~/static/images/media/skype-logo.png" alt="logo" />
+        <img src="/images/media/skype-logo.png" alt="logo" />
       </nuxt-link>
     </li>
   </ul>
 </template>
 
 <script>
-import Vue from 'vue'
-export default Vue.extend({})
+export default {}
 </script>
 
 <style lang="postcss" module>

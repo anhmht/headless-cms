@@ -1,38 +1,11 @@
-import { GetterTree } from 'vuex'
-import { RootState } from '~/store/state'
+import { useState } from './state'
 
-export namespace Getters {
-  // ---------------------------------------------------------------------------
-  //
-  //  Getter Keys
-  //
-  // ---------------------------------------------------------------------------
-
-  export const KEY = {
-  } as const
-
-  // ---------------------------------------------------------------------------
-  //
-  //  Getter Arguments
-  //
-  // ---------------------------------------------------------------------------
-
-  export namespace Argument { }
-
-  // ---------------------------------------------------------------------------
-  //
-  //  Getter Returns
-  //
-  // ---------------------------------------------------------------------------
-
-  export namespace Return { }
-}
-
-// -----------------------------------------------------------------------------
-//
-//  Getter Implements
-//
-// -----------------------------------------------------------------------------
-
-export default {
-} as GetterTree<RootState, RootState>
+export const useGetters = defineStore('getters', () => {
+  const state = useState()
+  function getCategories() {
+    return state.categories
+  }
+  return {
+    getCategories
+  }
+})

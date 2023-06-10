@@ -10,11 +10,9 @@
     </transition>
     <SocialMedia v-if="!loading" />
     <NavSideBar :class="visible ? $style.visibleSidebar : ''" />
-    <div :class="visible ? $style.visibleSidebar : ''">
+    <div v-show="displayContent" :class="visible ? $style.visibleSidebar : ''">
       <Header />
-      <main>
-        <nuxt-child />
-      </main>
+      <main><slot /></main>
       <Footer />
     </div>
     <div id="fb-root"></div>
@@ -28,33 +26,28 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import PreLoading from '~/components/common/PreLoading.vue'
-import Footer from '~/components/layout/footer/Footer.vue'
-import Header from '~/components/layout/header/Header.vue'
-import NavSideBar from '~/components/layout/header/NavSideBar.vue'
 import imagesloaded from 'imagesloaded'
 import gsap from 'gsap'
 import { sleep } from '~/utils'
-import SocialMedia from '~/components/layout/SocialMedia.vue'
 
-export default Vue.extend({
-  components: { Header, Footer, NavSideBar, PreLoading, SocialMedia },
+export default {
   middleware: ['categories'],
   data() {
     return {
       visible: false,
-      loading: true
+      loading: true,
+      displayContent: false
     }
   },
   created() {
-    this.$nuxt.$on('openSidebar', () => {
+    this.$eventBus.on('openSidebar', () => {
       this.visible = !this.visible
     })
   },
   mounted() {
     const tl = gsap.timeline()
     const vm = this
+    document.querySelector('body').classList.add('overflow-hidden')
     const imageLoad = imagesloaded(document.querySelector('.page'))
     imageLoad.on('done', async () => {
       await sleep(1000)
@@ -67,11 +60,13 @@ export default Vue.extend({
         stagger: 0.3,
         ease: 'power3.out'
       })
-      await sleep(3000)
+      vm.displayContent = true
+      await sleep(2500)
       vm.loading = false
+      document.querySelector('body').classList.remove('overflow-hidden')
     })
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

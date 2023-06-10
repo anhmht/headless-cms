@@ -9,7 +9,7 @@
         <div :class="[$style.blinder, 'blinder']"></div>
       </div>
       <div :class="[$style.main, 'main']">
-        <img src="~/static/images/LAW_4_YOU-transparent.png" alt="logo" />
+        <img src="/images/LAW_4_YOU-transparent.png" alt="logo" />
         <h1 id="my-text">LAW 4 YOU</h1>
       </div>
     </div>
@@ -17,10 +17,9 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import SplitType from 'split-type'
 import gsap from 'gsap'
-export default Vue.extend({
+export default {
   mounted() {
     const text = new SplitType('#my-text')
     gsap.to('.char', {
@@ -32,7 +31,7 @@ export default Vue.extend({
       yoyo: true
     })
   }
-})
+}
 </script>
 
 <style lang="postcss" module>

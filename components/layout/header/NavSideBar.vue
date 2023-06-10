@@ -2,10 +2,10 @@
   <div :class="$style.root">
     <div :class="$style.header">
       <h1>LAW 4 YOU</h1>
-      <i class="fa-solid fa-xmark" @click="$nuxt.$emit('openSidebar')"></i>
+      <i class="fa-solid fa-xmark" @click="$eventBus.emit('openSidebar')"></i>
     </div>
     <div :class="$style.search">
-      <SearchPost />
+      <SearchPost mobile />
     </div>
     <div :class="$style.content">
       <div v-for="item in categories" :class="$style.item" :key="item.id">
@@ -20,25 +20,20 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import LanguageSwitcher from '~/components/common/LanguageSwitcher.vue'
-import SearchPost from '~/components/common/SearchPost.vue'
-import { RootState } from '~/store/state'
-export default Vue.extend({
-  components: { LanguageSwitcher, SearchPost },
+<script>
+import { useMainStore } from '~/store'
+import { mapState } from 'pinia'
+export default {
   computed: {
-    categories() {
-      return (this.$store.state as RootState).categories
-    }
+    ...mapState(useMainStore, ['categories'])
   },
   methods: {
-    handleClick(item: any) {
-      this.$nuxt.$emit('openSidebar')
+    handleClick(item) {
+      this.$eventBus.emit('openSidebar')
       this.$router.push(`/category/${item.slug}`)
     }
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {

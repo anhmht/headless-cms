@@ -1,16 +1,16 @@
 <template>
-  <div :class="$style.root">
-    <nuxt-link v-if="link" :to="category.path">
-      {{ $translate('title', category) }}
-    </nuxt-link>
-    <div v-else>{{ $translate('title', category) }}</div>
-  </div>
+  <client-only>
+    <div :class="$style.root">
+      <nuxt-link v-if="link" :to="category._path">
+        {{ $translate('title', category) }}
+      </nuxt-link>
+      <div v-else>{{ $translate('title', category) }}</div>
+    </div>
+  </client-only>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { RootState } from '~/store/state'
-export default Vue.extend({
+export default {
   props: {
     id: {
       type: String,
@@ -23,13 +23,13 @@ export default Vue.extend({
   },
   computed: {
     categories(): any {
-      return (this.$store.state as RootState).categories
+      return toRaw(this.$store.$state.categories)
     },
     category(): any {
       return this.categories.find((item: any) => item.id === this.id)
     }
   }
-})
+}
 </script>
 <style lang="postcss" module>
 .root {
