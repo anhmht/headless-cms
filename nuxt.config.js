@@ -17,17 +17,17 @@ export default defineNuxtConfig({
   /*
    ** SSL on local development (checkout README.md for instructions)
    */
-  server: {
-    port: process.env.NUXT_PORT,
-    https: {
-      key: fs.readFileSync(
-        fileURLToPath(new URL('.ssl/localhost.key', import.meta.url))
-      ),
-      cert: fs.readFileSync(
-        fileURLToPath(new URL('.ssl/localhost.crt', import.meta.url))
-      )
-    }
-  },
+  // server: {
+  //   port: process.env.NUXT_PORT,
+  //   https: {
+  //     key: fs.readFileSync(
+  //       fileURLToPath(new URL('.ssl/localhost.key', import.meta.url))
+  //     ),
+  //     cert: fs.readFileSync(
+  //       fileURLToPath(new URL('.ssl/localhost.crt', import.meta.url))
+  //     )
+  //   }
+  // },
   // experimental: {
   //   viewTransition: true
   // },
