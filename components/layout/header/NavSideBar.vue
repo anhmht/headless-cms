@@ -30,7 +30,7 @@ export default {
   methods: {
     handleClick(item) {
       this.$eventBus.emit('openSidebar')
-      this.$router.push(`/category/${item.slug}`)
+      this.$router.push(`/category/${item._slug}`)
     }
   }
 }

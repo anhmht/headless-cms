@@ -3,8 +3,12 @@
     <div :class="$style.item" v-for="(post, index) in newPosts" :key="post.id">
       <el-row :gutter="16">
         <el-col :sm="12">
-          <nuxt-link :to="getSlug(post._path)">
-            <img :src="posts[index].thumbnail" :alt="post.title" />
+          <nuxt-link :to="getSlug(post._path)" @click.native="active = post.id">
+            <img
+              :src="posts[index].thumbnail"
+              :alt="post.title"
+              :class="{ active: active === post.id }"
+            />
           </nuxt-link>
         </el-col>
         <el-col :sm="12">
@@ -24,6 +28,8 @@
 </template>
 
 <script setup>
+import { useState } from '#app'
+const active = useState()
 const props = defineProps({
   skip: {
     type: Number,
@@ -79,7 +85,7 @@ function summary(summary) {
   return `${summary.substring(0, 250)}...`
 }
 </script>
-<style lang="postcss" module>
+<style lang="postcss" module scoped>
 .root {
   .item {
     padding-bottom: var(--space-2x);
@@ -126,5 +132,11 @@ function summary(summary) {
     padding-top: var(--space-2x);
     border-top: 1px solid #eeeeee;
   }
+}
+</style>
+<style scoped>
+img.active {
+  view-transition-name: selected-post;
+  contain: layout;
 }
 </style>
